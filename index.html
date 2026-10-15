@@ -3,220 +3,360 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carla's Cakes | Authentic Italian Bakery in Pachuta, MS</title>
-<meta name="description" content="Carla's Cakes — authentic Italian baking in Pachuta, MS: wedding cakes, cannoli, biscotti and custom celebration cakes.">
+<title>M&B Latinos Services | Accounting, Tax & Contractor Licensing in Las Vegas, NV</title>
+<meta name="description" content="M&B Latinos Services — bilingual accounting, tax preparation and contractor licensing assistance for small businesses in Las Vegas, Nevada. Se habla español. Call 702-482-5262.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --esp:#3E2C1C; --esp-d:#2B1C10; --olive:#7B5E3B; --tan:#C2A77D;
-  --parch:#EDE3CF; --parch2:#E3D5B8; --wine:#5C2E2E; --ink:#4A3826;
-  --off:#F5EFE3;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Jost',system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--parch);line-height:1.7;overflow-x:hidden}
-h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;line-height:1.15;font-weight:600}
-a{color:inherit}
-.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
-/* NAV */
-header{position:sticky;top:0;z-index:50;background:rgba(43,28,16,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(194,167,125,.3)}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 22px;max-width:1040px;margin:0 auto}
-.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--off);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.25rem}
-.brand .mark{width:36px;height:36px;flex:none;border:1.5px solid var(--tan);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--tan)}
-.links{display:none;gap:28px}
-.links a{color:#CBBFA9;text-decoration:none;font-size:.9rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
-.links a:hover{color:var(--off)}
-.cta-nav{background:var(--tan);color:var(--esp-d);text-decoration:none;font-weight:600;font-size:.85rem;padding:10px 22px;border-radius:999px;display:none;letter-spacing:.05em}
-.cta-nav:hover{background:#D5B98C}
-.burger{background:none;border:0;cursor:pointer;padding:8px}
-.burger span{display:block;width:24px;height:2px;background:var(--off);margin:5px 0}
-@media(min-width:840px){.links,.cta-nav{display:flex}.burger{display:none}}
-.mobile-menu{display:none;background:var(--esp);border-top:1px solid rgba(194,167,125,.25)}
-.mobile-menu.open{display:block}
-.mobile-menu a{display:block;padding:14px 26px;color:var(--off);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.06);letter-spacing:.06em}
-/* HERO */
-.hero{background:radial-gradient(120% 100% at 50% 0%, #4A3520 0%, var(--esp-d) 65%),var(--esp-d);color:var(--off);text-align:center;position:relative;overflow:hidden}
-.hero .wrap{padding:84px 22px 90px;position:relative;z-index:1}
-.hero::before{content:"";position:absolute;inset:18px;border:1px solid rgba(194,167,125,.25);border-radius:4px;pointer-events:none}
-.orn{color:var(--tan);letter-spacing:.5em;font-size:.85rem;margin-bottom:18px}
-.hero h1{font-size:clamp(2.6rem,9vw,4.4rem);color:var(--off);font-weight:600}
-.hero h1 em{font-style:italic;color:var(--tan)}
-.tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,3.5vw,1.4rem);color:#CBBFA9;margin-top:14px}
-.hero p.lead{color:#B7A88E;max-width:52ch;margin:18px auto 0;font-size:1rem}
-.hero-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:30px}
-.btn-primary{background:var(--tan);color:var(--esp-d);text-decoration:none;font-weight:600;padding:15px 34px;border-radius:999px;letter-spacing:.04em}
-.btn-primary:hover{background:#D5B98C}
-.btn-ghost{border:1px solid rgba(245,239,227,.45);color:var(--off);text-decoration:none;padding:15px 34px;border-radius:999px;font-weight:500}
-.btn-ghost:hover{border-color:var(--off)}
-.hero-notes{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:center;margin-top:32px;color:#B7A88E;font-size:.88rem;letter-spacing:.06em}
-.hero-notes span::before{content:"❧ ";color:var(--tan)}
-/* SECTIONS */
-section{padding:76px 0}
-.center{text-align:center}
-.kicker{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--olive);font-weight:600;margin-bottom:12px}
-h2.title{font-size:clamp(2rem,5.5vw,2.9rem);color:var(--esp);margin-bottom:12px}
-.sub{color:#7A6A52;max-width:56ch;margin:0 auto}
-.rule{width:64px;height:2px;background:var(--tan);margin:22px auto 0}
-/* SERVICES — menu style */
-.menu{max-width:760px;margin:44px auto 0;background:#F7F0DF;border:1px solid #D9C9A6;border-radius:6px;padding:40px 34px;box-shadow:0 10px 30px rgba(62,44,28,.08)}
-.menu-item{margin-bottom:30px}
-.menu-item:last-child{margin-bottom:0}
-.menu-head{display:flex;align-items:baseline;gap:12px}
-.menu-head h3{font-size:1.5rem;color:var(--esp);white-space:nowrap}
-.menu-head .dots{flex:1;border-bottom:2px dotted #C4AE82;transform:translateY(-6px);min-width:20px}
-.menu-head .it{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--olive);font-size:1.05rem;white-space:nowrap}
-.menu-item p{color:#7A6A52;font-size:.94rem;margin-top:8px;max-width:56ch}
-.menu-note{text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--olive);font-size:1.15rem;margin-top:36px}
-/* WHY */
-.why{background:var(--esp);color:var(--off)}
-.why h2.title{color:var(--off)}
-.why .sub{color:#B7A88E}
-.why-grid{display:grid;gap:22px;margin-top:40px;max-width:900px;margin-left:auto;margin-right:auto}
-.why-card{text-align:center;padding:10px 18px}
-.why-card .glyph{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--tan);margin-bottom:8px}
-.why-card h3{font-size:1.35rem;color:var(--off);margin-bottom:8px}
-.why-card p{font-size:.93rem;color:#B7A88E;max-width:34ch;margin:0 auto}
-@media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
-/* AREA */
-.towns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:30px}
-.town{background:#F7F0DF;border:1px solid #C9B78F;color:var(--esp);padding:10px 22px;border-radius:999px;font-size:.92rem;font-weight:500}
-/* CONTACT */
-.contact{background:var(--parch2)}
-.contact-grid{display:grid;gap:26px;margin-top:36px;max-width:940px;margin-left:auto;margin-right:auto}
-.info{background:var(--esp);color:var(--off);border-radius:6px;padding:32px}
-.info h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--tan);margin-bottom:16px}
-.info-row{display:flex;gap:12px;margin-bottom:14px;font-size:.95rem;color:#CBBFA9;align-items:flex-start}
-.info-row a{color:var(--off);text-decoration:none;font-weight:500}
-.info-row a:hover{color:var(--tan)}
-form{background:#F7F0DF;border:1px solid #D9C9A6;border-radius:6px;padding:32px}
-form h3{font-size:1.6rem;color:var(--esp);margin-bottom:6px}
-form p{font-size:.9rem;color:#7A6A52;margin-bottom:16px}
-label{display:block;font-size:.82rem;font-weight:600;margin:12px 0 6px;letter-spacing:.06em;text-transform:uppercase;color:var(--olive)}
-input,textarea,select{width:100%;padding:12px 14px;border:1px solid #C4AE82;border-radius:6px;font:inherit;background:#fff;color:var(--ink);max-width:100%}
-textarea{min-height:96px;resize:vertical}
-button[type=submit]{margin-top:18px;background:var(--esp);color:var(--off);border:0;font-weight:600;font-size:1rem;padding:15px;border-radius:999px;cursor:pointer;width:100%;letter-spacing:.05em}
-button[type=submit]:hover{background:var(--esp-d)}
-@media(min-width:880px){.contact-grid{grid-template-columns:.9fr 1.1fr}}
-/* FOOTER */
-footer{background:var(--esp-d);color:#9C8E76;padding:28px 0;font-size:.85rem;text-align:center}
-footer .credit{margin-top:6px;display:block;color:#7A6E59}
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+  :root{
+    --cream:#F2EEE7;      /* 60% */
+    --slate:#1C1F24;      /* tinted black — dark areas */
+    --slate-2:#3A4452;    /* 30% secondary */
+    --ink:#2A2E35;
+    --ink-soft:#5B6470;
+    --gray:#9AA3AD;
+    --brass:#C79C5A;      /* 10% accent — CTAs only */
+    --brass-dark:#A9833F;
+    --line:rgba(42,46,53,.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.serif{font-family:"Source Serif 4",Georgia,serif;line-height:1.18;letter-spacing:-0.01em}
+  a{color:inherit;text-decoration:none}
+  svg{max-width:100%;display:block}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  section{padding:80px 0}
+
+  /* ---------- Nav ---------- */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(28,31,36,.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(199,156,90,.25)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:1.25rem;color:#F2EEE7}
+  .brand b{color:var(--brass);font-weight:700}
+  .nav-links{display:flex;gap:28px;align-items:center;font-size:.93rem;font-weight:500}
+  .nav-links a{color:#C9CDD3}
+  .nav-links a:hover{color:var(--brass)}
+  .btn{display:inline-block;background:var(--brass);color:#1C1F24;padding:12px 28px;font-weight:700;font-size:.94rem;border:none;cursor:pointer;transition:background .15s ease,transform .15s ease;font-family:inherit;border-radius:4px}
+  .btn:hover{background:var(--brass-dark);transform:translateY(-1px)}
+  .btn-sm{padding:9px 20px;font-size:.86rem}
+  .btn-ghost{background:transparent;color:#F2EEE7;border:1.5px solid rgba(242,238,231,.4);border-radius:4px}
+  .btn-ghost:hover{border-color:var(--brass);color:var(--brass)}
+  .burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
+  .burger span{display:block;width:24px;height:2px;background:#F2EEE7;margin:5px 0}
+
+  /* ---------- Hero ---------- */
+  .hero{background:var(--slate);color:#EDEAE2;padding:96px 0 90px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    repeating-linear-gradient(0deg,transparent 0 46px,rgba(199,156,90,.06) 46px 47px),
+    linear-gradient(115deg,transparent 60%,rgba(199,156,90,.08) 60.5%,transparent 61%)}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+  .eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);border:1px solid rgba(199,156,90,.5);padding:8px 18px;border-radius:4px;margin-bottom:22px}
+  .hero h1{font-size:clamp(2.4rem,5.4vw,3.9rem);font-weight:600;color:#F2EEE7;margin-bottom:20px}
+  .hero h1 em{font-style:italic;color:var(--brass)}
+  .hero p.lead{font-size:1.1rem;color:#B9BFC7;max-width:34rem;margin-bottom:32px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+  .trust{display:flex;gap:24px;flex-wrap:wrap;font-size:.9rem;color:#9AA3AD}
+  .trust b{color:#EDEAE2}
+  .hero-card{background:rgba(242,238,231,.04);border:1px solid rgba(199,156,90,.35);border-radius:8px;padding:36px 32px}
+  .hero-card .big{font-family:"Source Serif 4",serif;font-size:2.6rem;color:#F2EEE7;line-height:1.1;margin-bottom:8px}
+  .hero-card .big em{font-style:italic;color:var(--brass)}
+  .hero-card p{color:#B9BFC7;font-size:.95rem;margin-bottom:22px}
+  .hero-card .row{display:flex;justify-content:space-between;border-top:1px solid rgba(199,156,90,.2);padding:12px 0;font-size:.92rem;color:#C9CDD3}
+  .hero-card .row b{color:#F2EEE7}
+
+  /* ---------- Section headers ---------- */
+  .sec-head{max-width:680px;margin:0 auto 52px;text-align:left;border-left:3px solid var(--brass);padding-left:24px}
+  .sec-head .kicker{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--brass-dark);margin-bottom:10px;display:block}
+  .sec-head h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:600;margin-bottom:10px}
+  .sec-head p{color:var(--ink-soft)}
+
+  /* ---------- Services: editorial numbered list ---------- */
+  .svc-list{border-top:1px solid var(--line)}
+  .svc-row{display:grid;grid-template-columns:80px 1fr 2fr auto;gap:24px;align-items:center;padding:28px 8px;border-bottom:1px solid var(--line);transition:background .15s ease}
+  .svc-row:hover{background:rgba(199,156,90,.07)}
+  .svc-row .n{font-family:"Source Serif 4",serif;font-size:1.6rem;color:var(--brass);font-weight:600}
+  .svc-row h3{font-size:1.25rem;font-weight:600}
+  .svc-row p{color:var(--ink-soft);font-size:.95rem;max-width:44rem}
+  .svc-row .arr{width:44px;height:44px;border:1.5px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .svc-row .arr svg{width:18px;height:18px;stroke:var(--brass-dark);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+  /* ---------- Why us ---------- */
+  #why{background:var(--slate-2);color:#EDEAE2}
+  #why .sec-head h2{color:#F2EEE7}
+  #why .sec-head p{color:#B9BFC7}
+  #why .sec-head .kicker{color:var(--brass)}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .why{background:rgba(242,238,231,.05);border:1px solid rgba(199,156,90,.25);border-radius:8px;padding:30px 24px}
+  .why .icon{width:48px;height:48px;border-radius:8px;background:rgba(199,156,90,.15);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .why .icon svg{width:26px;height:26px;stroke:var(--brass);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .why h3{font-size:1.1rem;margin-bottom:8px;color:#F2EEE7}
+  .why p{font-size:.9rem;color:#B9BFC7}
+  .espanol{margin-top:34px;text-align:center;font-family:"Source Serif 4",serif;font-style:italic;font-size:1.35rem;color:var(--brass)}
+
+  /* ---------- Service area ---------- */
+  .area-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .area-grid h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:14px}
+  .area-grid>p, .area-copy p{color:var(--ink-soft);margin-bottom:20px}
+  .towns{list-style:none;columns:2;column-gap:32px}
+  .towns li{padding:10px 0;border-bottom:1px solid var(--line);font-weight:600;font-size:.98rem;break-inside:avoid}
+  .towns li::before{content:"— ";color:var(--brass-dark)}
+  .towns li.home{color:var(--brass-dark)}
+
+  /* ---------- Contact ---------- */
+  #contact{background:var(--slate);color:#EDEAE2}
+  #contact .sec-head h2{color:#F2EEE7}
+  #contact .sec-head p{color:#B9BFC7}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+  .info-block{margin-bottom:26px}
+  .info-block .lbl{font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin-bottom:6px}
+  .info-block .val{font-size:1.25rem;font-weight:600;color:#F2EEE7}
+  .info-block .val a{color:#F2EEE7;border-bottom:1px solid var(--brass)}
+  .info-block .sub{font-size:.92rem;color:#9AA3AD;margin-top:4px}
+  .quote-form{background:#F2EEE7;color:var(--ink);border-radius:8px;padding:36px}
+  .quote-form h3{font-size:1.35rem;margin-bottom:6px}
+  .quote-form>p{font-size:.92rem;color:var(--ink-soft);margin-bottom:22px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-size:.84rem;font-weight:700;margin-bottom:6px}
+  .field input,.field textarea,.field select{width:100%;padding:12px 14px;border:1.5px solid rgba(42,46,53,.2);border-radius:6px;font:inherit;font-size:.95rem;background:#fff;color:var(--ink)}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--brass-dark)}
+  .field textarea{min-height:110px;resize:vertical}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+
+  /* ---------- Footer ---------- */
+  footer{background:#14161A;color:#9AA3AD;padding:44px 0 30px;text-align:center}
+  footer .brand{color:#F2EEE7;justify-content:center;display:inline-block;margin-bottom:6px}
+  footer p{font-size:.9rem;margin:6px 0}
+  footer a{color:#F2EEE7}
+  .credit{margin-top:22px;padding-top:18px;border-top:1px solid rgba(242,238,231,.12);font-size:.82rem;color:#6E767F}
+
+  /* ---------- Reveal ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.visible{opacity:1;transform:none}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr}
+    .why-grid{grid-template-columns:repeat(2,1fr)}
+    .area-grid{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+    .svc-row{grid-template-columns:56px 1fr;grid-template-areas:"n h" "n p" "n a";row-gap:6px}
+    .svc-row .n{grid-area:n}.svc-row h3{grid-area:h}.svc-row p{grid-area:p}.svc-row .arr{grid-area:a;margin-top:8px}
+  }
+  @media(max-width:640px){
+    section{padding:60px 0}
+    .nav-links{position:fixed;top:66px;right:0;left:0;background:#1C1F24;flex-direction:column;align-items:flex-start;padding:20px 24px 26px;gap:18px;border-bottom:1px solid rgba(199,156,90,.25);transform:translateY(-140%);transition:transform .25s ease}
+    .nav-links.open{transform:none}
+    .burger{display:block}
+    .why-grid{grid-template-columns:1fr}
+    .field-row{grid-template-columns:1fr}
+    .hero{padding:64px 0 56px}
+    .towns{columns:1}
+  }
 </style>
 </head>
 <body>
-<header>
-  <div class="nav">
-    <a class="brand" href="#top"><span class="mark">C</span>Carla's Cakes</a>
-    <nav class="links"><a href="#services">Bakes</a><a href="#why">Why Us</a><a href="#area">Service Area</a><a href="#contact">Contact</a></nav>
-    <a class="cta-nav" href="#contact">Order Inquiry</a>
-    <button class="burger" aria-label="Menu" onclick="document.getElementById('mmenu').classList.toggle('open')"><span></span><span></span><span></span></button>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">M<b>&</b>B Latinos Services</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+17024825262" class="btn btn-sm">Call 702-482-5262</a>
+    </nav>
   </div>
-  <div class="mobile-menu" id="mmenu"><a href="#services">Bakes</a><a href="#why">Why Us</a><a href="#area">Service Area</a><a href="#contact">Contact</a></div>
 </header>
 
-<div class="hero" id="top">
-  <div class="wrap">
-    <div class="orn reveal">❧ ❧ ❧</div>
-    <h1 class="reveal">Baked the <em>Italian</em> way.</h1>
-    <div class="tagline reveal">— dolci fatti in casa, right here in Mississippi —</div>
-    <p class="lead reveal">Carla's Cakes brings authentic Italian baking to Pachuta: wedding cakes, cannoli, biscotti, and celebration cakes made from scratch with old family recipes.</p>
-    <div class="hero-btns reveal">
-      <a class="btn-primary" href="#contact">Get a Free Quote</a>
-      <a class="btn-ghost" href="mailto:carlascakes43@yahoo.com">Email Us</a>
-    </div>
-    <div class="hero-notes reveal"><span>Made from scratch</span><span>Custom designs</span><span>Free consultations</span></div>
-  </div>
-</div>
-
-<section id="services">
-  <div class="wrap center">
-    <div class="kicker reveal">Our Bakes</div>
-    <h2 class="title reveal">From the oven, with amore</h2>
-    <p class="sub reveal">Every cake is baked to order — never frozen, never boxed mix. Tell us your occasion and we'll bake for it.</p>
-    <div class="rule reveal"></div>
-    <div class="menu reveal" style="text-align:left">
-      <div class="menu-item">
-        <div class="menu-head"><h3>Wedding Cakes</h3><span class="dots"></span><span class="it">torte nuziali</span></div>
-        <p>Multi-tier wedding cakes designed around your theme — classic vanilla bean, lemon-ricotta, chocolate-hazelnut, and more, finished with fresh flowers or hand piping.</p>
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Las Vegas, Nevada · Se habla español</span>
+      <h1>Your numbers, <em>handled right</em> — in English or Spanish.</h1>
+      <p class="lead">M&B Latinos Services helps Las Vegas small businesses and contractors stay compliant and keep more of what they earn — tax preparation, bookkeeping, payroll and Nevada contractor licensing assistance, all under one roof.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn">Get a Free Quote</a>
+        <a href="tel:+17024825262" class="btn btn-ghost">702-482-5262</a>
       </div>
-      <div class="menu-item">
-        <div class="menu-head"><h3>Custom Celebration Cakes</h3><span class="dots"></span><span class="it">torte per feste</span></div>
-        <p>Birthdays, anniversaries, graduations, baptisms — any size, any theme, decorated by hand to match your celebration.</p>
-      </div>
-      <div class="menu-item">
-        <div class="menu-head"><h3>Italian Pastries</h3><span class="dots"></span><span class="it">pasticceria</span></div>
-        <p>Cannoli with sweet ricotta, flaky sfogliatelle, cream-filled zeppole, and seasonal specialties — sold by the box or the tray.</p>
-      </div>
-      <div class="menu-item">
-        <div class="menu-head"><h3>Cookies &amp; Biscotti</h3><span class="dots"></span><span class="it">biscotti</span></div>
-        <p>Twice-baked almond and anise biscotti, Italian wedding cookies, pizzelle, and decorated sugar cookies for gifts and events.</p>
-      </div>
-      <div class="menu-item">
-        <div class="menu-head"><h3>Breads &amp; Focaccia</h3><span class="dots"></span><span class="it">pane</span></div>
-        <p>Rustic Italian loaves, rosemary focaccia, and dinner rolls — baked fresh for family meals and holiday tables.</p>
-      </div>
-      <div class="menu-item">
-        <div class="menu-head"><h3>Dessert Tables &amp; Catering</h3><span class="dots"></span><span class="it">tavolo dei dolci</span></div>
-        <p>A full spread of cakes, pastries, and cookies for weddings and parties — we bake it, you take the compliments.</p>
+      <div class="trust">
+        <span><b>Bilingual</b> service</span>
+        <span><b>Contractor</b> licensing help</span>
+        <span><b>Upfront</b> fees, no surprises</span>
       </div>
     </div>
-    <p class="menu-note reveal">Have something special in mind? Just ask — custom requests are our favorite.</p>
+    <aside class="hero-card">
+      <div class="big">One office for <em>every paper</em> your business touches.</div>
+      <p>Taxes, books, payroll, licenses — instead of chasing four different people, you call one number.</p>
+      <div class="row"><span>Tax preparation</span><b>Individual &amp; business</b></div>
+      <div class="row"><span>Bookkeeping</span><b>Monthly, clean &amp; audit-ready</b></div>
+      <div class="row"><span>Contractor licensing</span><b>Nevada applications &amp; renewals</b></div>
+      <div class="row" style="border-bottom:none"><span>Payroll</span><b>Withholdings &amp; filings</b></div>
+    </aside>
   </div>
 </section>
 
-<section class="why" id="why">
-  <div class="wrap center">
-    <div class="kicker reveal" style="color:var(--tan)">Why Carla's</div>
-    <h2 class="title reveal">Real recipes, real care</h2>
-    <p class="sub reveal">This isn't a bakery chain — it's home baking at its best.</p>
-    <div class="rule reveal" style="margin-bottom:10px"></div>
-    <div class="why-grid">
-      <div class="why-card reveal"><div class="glyph">❧</div><h3>Authentic Italian recipes</h3><p>Family recipes passed down and perfected — flavors you won't find in a grocery store bakery.</p></div>
-      <div class="why-card reveal"><div class="glyph">❧</div><h3>Baked to order</h3><p>Nothing sits in a case for days. Your cake is baked for your date, fresh and on time.</p></div>
-      <div class="why-card reveal"><div class="glyph">❧</div><h3>Truly custom</h3><p>Flavors, fillings, sizes, and designs built around what you want — with a free consultation to plan it.</p></div>
-      <div class="why-card reveal"><div class="glyph">❧</div><h3>Hometown personal</h3><p>Based in Pachuta — you talk directly with the baker, from first idea to pickup day.</p></div>
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">What we do</span>
+      <h2>Services built for working businesses</h2>
+      <p>Straightforward accounting and compliance services for contractors, shops, restaurants and service businesses across the Las Vegas Valley.</p>
     </div>
+    <div class="svc-list">
+      <div class="svc-row reveal">
+        <span class="n">01</span>
+        <h3>Tax Preparation</h3>
+        <p>Individual and small-business tax returns prepared accurately and filed on time — federal and Nevada. We look for every deduction you're entitled to, and explain everything in plain language.</p>
+        <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="svc-row reveal">
+        <span class="n">02</span>
+        <h3>Bookkeeping &amp; Accounting</h3>
+        <p>Monthly books, profit-and-loss statements and organized records that keep your business audit-ready. Know exactly where your money goes, every month.</p>
+        <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="svc-row reveal">
+        <span class="n">03</span>
+        <h3>Contractor License Assistance</h3>
+        <p>Step-by-step help with Nevada contractor license applications, renewals and paperwork. We know the forms, the timelines and the common mistakes that cause delays.</p>
+        <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="svc-row reveal">
+        <span class="n">04</span>
+        <h3>Payroll Services</h3>
+        <p>Employee payroll, tax withholdings and year-end filings handled correctly and on schedule — so you can focus on the job site, not the paperwork.</p>
+        <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="svc-row reveal">
+        <span class="n">05</span>
+        <h3>Business Formation &amp; EIN</h3>
+        <p>LLC setup, EIN applications and business licenses — everything you need to start operating legally in Nevada, handled in the right order.</p>
+        <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="svc-row reveal">
+        <span class="n">06</span>
+        <h3>IRS &amp; Tax Notices</h3>
+        <p>Got a letter from the IRS or the state? Don't ignore it. We review it with you — in English or Spanish — and handle the response properly.</p>
+        <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Why M&B</span>
+      <h2>An office that speaks your language</h2>
+      <p>Taxes and licenses are stressful enough without a language barrier. We do it all in the language you're comfortable with.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/></svg></div>
+        <h3>Fully Bilingual</h3>
+        <p>Every consultation, every form, every explanation — in English or Spanish. You'll never sign something you don't understand.</p>
+      </div>
+      <div class="why reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10l6-5 6 5v10M10 20v-5h4v5"/></svg></div>
+        <h3>Contractor &amp; Trade Focus</h3>
+        <p>We work with the trades every day — GCs, handymen, electricians, landscapers. We know how your business actually runs.</p>
+      </div>
+      <div class="why reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg></div>
+        <h3>Upfront, Honest Fees</h3>
+        <p>You get a clear price before we start — no hourly meter running, no surprise invoices. Free initial consultation.</p>
+      </div>
+      <div class="why reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+        <h3>Year-Round Support</h3>
+        <p>We're here in July, not just in April. Quarterly questions, mid-year checkups, license renewals — call any time.</p>
+      </div>
+    </div>
+    <p class="espanol reveal">“Hablamos tu idioma. Entendemos tu negocio.”</p>
   </div>
 </section>
 
 <section id="area">
-  <div class="wrap center">
-    <div class="kicker reveal">Service area</div>
-    <h2 class="title reveal">Serving Clarke County &amp; beyond</h2>
-    <p class="sub reveal">Based in Pachuta, Mississippi — pickup available, delivery arranged for larger orders.</p>
-    <div class="towns reveal">
-      <span class="town">Pachuta</span><span class="town">Quitman</span><span class="town">Stonewall</span><span class="town">Enterprise</span><span class="town">Meridian</span><span class="town">Heidelberg</span><span class="town">Waynesboro</span><span class="town">Shubuta</span>
+  <div class="wrap area-grid">
+    <div class="area-copy reveal">
+      <h2>Serving the Las Vegas Valley</h2>
+      <p>Our office serves small businesses and contractors across Clark County. In-person appointments, phone consultations and secure document drop-off.</p>
+      <p>Working outside the Valley? Many services — tax prep, bookkeeping, license paperwork — can be handled remotely. Call and ask.</p>
     </div>
+    <ul class="towns reveal">
+      <li class="home">Las Vegas</li>
+      <li>North Las Vegas</li>
+      <li>Henderson</li>
+      <li>Paradise</li>
+      <li>Spring Valley</li>
+      <li>Summerlin</li>
+      <li>Boulder City</li>
+      <li>Enterprise</li>
+    </ul>
   </div>
 </section>
 
-<section class="contact" id="contact">
-  <div class="wrap center">
-    <div class="kicker reveal">Contact</div>
-    <h2 class="title reveal">Let's bake something wonderful</h2>
-    <p class="sub reveal">Tell us about your occasion — we'll reply with ideas and a free quote.</p>
-    <div class="rule reveal"></div>
-    <div class="contact-grid" style="text-align:left">
-      <div class="info reveal">
-        <h3>Carla's Cakes</h3>
-        <div class="info-row"><span>📍</span><span>Pachuta, Mississippi</span></div>
-        <div class="info-row"><span>✉️</span><span><a href="mailto:carlascakes43@yahoo.com">carlascakes43@yahoo.com</a></span></div>
-        <div class="info-row"><span>🕒</span><span>By appointment — order ahead for events</span></div>
-        <div class="info-row"><span>❧</span><span>Free consultations · Custom orders welcome</span></div>
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Contact</span>
+      <h2>Start with a free consultation</h2>
+      <p>Tell us what you need — a tax return, clean books, a contractor license — and we'll tell you honestly what it takes.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="info-block">
+          <div class="lbl">Phone</div>
+          <div class="val"><a href="tel:+17024825262">702-482-5262</a></div>
+          <div class="sub">Call or text — English y español</div>
+        </div>
+        <div class="info-block">
+          <div class="lbl">Email</div>
+          <div class="val"><a href="mailto:marygleztrujillo@gmail.com">marygleztrujillo@gmail.com</a></div>
+        </div>
+        <div class="info-block">
+          <div class="lbl">Location</div>
+          <div class="val">Las Vegas, Nevada</div>
+        </div>
+        <div class="info-block">
+          <div class="lbl">Hours</div>
+          <div class="val" style="font-size:1.05rem">Mon – Fri, 9:00 am – 5:00 pm</div>
+          <div class="sub">Saturdays by appointment</div>
+        </div>
       </div>
-      <form class="reveal" id="quoteForm">
-        <h3>Order Inquiry</h3>
-        <p>Fill this out — it opens an email to us. Just hit send.</p>
-        <label for="qname">Your name</label><input id="qname" name="name" required placeholder="Jane Doe">
-        <label for="qemail">Your email</label><input id="qemail" name="email" type="email" required placeholder="you@email.com">
-        <label for="qservice">What are you craving?</label>
-        <select id="qservice" name="service"><option>Wedding Cake</option><option>Custom Celebration Cake</option><option>Italian Pastries</option><option>Cookies &amp; Biscotti</option><option>Breads &amp; Focaccia</option><option>Dessert Table / Catering</option></select>
-        <label for="qmsg">Tell us about your occasion</label><textarea id="qmsg" name="message" placeholder="e.g. Birthday cake for 30 people, chocolate with raspberry filling, needed May 10th…"></textarea>
-        <button type="submit">Send Inquiry</button>
+      <form class="quote-form reveal" id="quoteForm">
+        <h3>Request a free consultation</h3>
+        <p>Fill this out and it opens an email to us — just hit send.</p>
+        <div class="field-row">
+          <div class="field">
+            <label for="qname">Your name</label>
+            <input id="qname" type="text" required placeholder="e.g. Carlos Mendez">
+          </div>
+          <div class="field">
+            <label for="qphone">Phone</label>
+            <input id="qphone" type="tel" placeholder="(702) 555-0123">
+          </div>
+        </div>
+        <div class="field">
+          <label for="qtype">Service needed</label>
+          <select id="qtype">
+            <option>Tax preparation</option>
+            <option>Bookkeeping & accounting</option>
+            <option>Contractor license assistance</option>
+            <option>Payroll services</option>
+            <option>Business formation / EIN</option>
+            <option>Help with an IRS or tax notice</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="qmsg">Details</label>
+          <textarea id="qmsg" required placeholder="Tell us about your business and what you need help with…"></textarea>
+        </div>
+        <button type="submit" class="btn" style="width:100%">Send Request</button>
       </form>
     </div>
   </div>
@@ -224,22 +364,31 @@ footer .credit{margin-top:6px;display:block;color:#7A6E59}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Carla's Cakes · Pachuta, MS</span>
-    <span class="credit">Demo by Wahab Codes</span>
+    <a class="brand" href="#top">M<b>&</b>B Latinos Services</a>
+    <p>Accounting, tax &amp; contractor licensing · Las Vegas, NV · Se habla español</p>
+    <p><a href="tel:+17024825262">702-482-5262</a> · <a href="mailto:marygleztrujillo@gmail.com">marygleztrujillo@gmail.com</a></p>
+    <p class="credit">Demo by Wahab Codes</p>
   </div>
 </footer>
 
 <script>
-document.getElementById('quoteForm').addEventListener('submit',function(e){
-  e.preventDefault();
-  var f=e.target;
-  var subject=encodeURIComponent('Order Inquiry — '+f.service.value);
-  var body=encodeURIComponent('Name: '+f.name.value+'\nEmail: '+f.email.value+'\nInterested in: '+f.service.value+'\n\nDetails:\n'+f.message.value);
-  window.location.href='mailto:carlascakes43@yahoo.com?subject='+subject+'&body='+body;
-});
-document.querySelectorAll('#mmenu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mmenu').classList.remove('open')})});
-var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12});
-document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  const burger=document.getElementById('burger'),navLinks=document.getElementById('navLinks');
+  burger.addEventListener('click',()=>navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  document.getElementById('quoteForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    const n=document.getElementById('qname').value.trim();
+    const p=document.getElementById('qphone').value.trim();
+    const t=document.getElementById('qtype').value;
+    const m=document.getElementById('qmsg').value.trim();
+    const subject=encodeURIComponent('Consultation request — '+t);
+    const body=encodeURIComponent('Name: '+n+(p?'\nPhone: '+p:'')+'\nService: '+t+'\n\nDetails:\n'+m);
+    window.location.href='mailto:marygleztrujillo@gmail.com?subject='+subject+'&body='+body;
+  });
 </script>
 </body>
 </html>
