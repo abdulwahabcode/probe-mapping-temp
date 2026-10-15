@@ -3,384 +3,277 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Little Paws Pet Sitting LLC | Small-Breed Dog Sitting in Phoenix, AZ</title>
-<meta name="description" content="Little Paws Pet Sitting LLC — gentle, in-home pet sitting for small-breed dogs across Phoenix, Arizona. Free meet & greet, photo updates every visit. Call (480) 217-5352.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>MY GOLD CHEF CATERING | On-Site Taco Catering in Chula Vista, CA</title>
+<meta name="description" content="MY GOLD CHEF CATERING — on-site taquizas and taco catering in Chula Vista, CA. Weddings, birthdays, quinceañeras and corporate events.">
 <style>
-  :root{
-    --ivory:#F4F1EC;      /* 60% */
-    --sage:#8FAF9B;       /* 30% sections */
-    --sage-deep:#6E9379;
-    --card:#FFFFFF;
-    --ink:#2F2F2F;        /* charcoal text */
-    --ink-soft:#5C5C5C;
-    --gold:#C2A46D;       /* 10% accent — CTAs only */
-    --gold-dark:#A98850;
-    --radius:26px;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  html,body{overflow-x:hidden}
-  body{font-family:"Quicksand",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--ivory);color:var(--ink);line-height:1.65;font-weight:500;-webkit-font-smoothing:antialiased}
-  h1,h2,h3{line-height:1.2;letter-spacing:-0.01em}
-  a{color:inherit;text-decoration:none}
-  svg{max-width:100%}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-  section{padding:76px 0}
-
-  /* ---------- Nav ---------- */
-  header.nav{position:sticky;top:0;z-index:50;background:rgba(244,241,236,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(47,47,47,.1)}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
-  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.2rem}
-  .brand .paw{width:34px;height:34px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-  .brand .paw svg{width:20px;height:20px;fill:#F4F1EC}
-  .nav-links{display:flex;gap:26px;align-items:center;font-weight:600;font-size:.95rem}
-  .nav-links a{color:var(--ink-soft)}
-  .nav-links a:hover{color:var(--sage-deep)}
-  .btn{display:inline-block;background:var(--gold);color:#2F2F2F;padding:13px 28px;border-radius:999px;font-weight:700;font-size:.95rem;border:none;cursor:pointer;transition:transform .15s ease,background .15s ease;font-family:inherit}
-  .btn:hover{background:var(--gold-dark);transform:translateY(-1px)}
-  .btn-sm{padding:9px 20px;font-size:.87rem}
-  .btn-outline{background:transparent;border:2px solid var(--sage-deep);color:var(--sage-deep)}
-  .btn-outline:hover{background:var(--sage-deep);color:#F4F1EC}
-  .burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
-  .burger span{display:block;width:24px;height:3px;background:var(--ink);margin:5px 0;border-radius:3px}
-
-  /* ---------- Hero ---------- */
-  .hero{position:relative;padding:80px 0 70px;overflow:hidden;background:
-    radial-gradient(circle at 88% 12%, rgba(143,175,155,.35) 0 90px, transparent 91px),
-    radial-gradient(circle at 8% 88%, rgba(194,164,109,.22) 0 70px, transparent 71px)}
-  .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
-  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-deep);background:rgba(143,175,155,.18);padding:8px 18px;border-radius:999px;margin-bottom:20px}
-  .hero h1{font-size:clamp(2.3rem,5.2vw,3.6rem);font-weight:700;margin-bottom:18px}
-  .hero h1 em{font-style:normal;color:var(--sage-deep)}
-  .hero p.lead{font-size:1.1rem;color:var(--ink-soft);max-width:33rem;margin-bottom:30px}
-  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:28px}
-  .phone-big{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem}
-  .phone-big .ic{width:44px;height:44px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center}
-  .phone-big .ic svg{width:22px;height:22px;fill:#F4F1EC}
-  .trust-row{display:flex;gap:26px;flex-wrap:wrap;font-size:.9rem;color:var(--ink-soft);font-weight:600}
-  .hero-art{display:flex;justify-content:center}
-  .paw-cluster{background:var(--card);border-radius:40px;padding:44px 36px;box-shadow:0 26px 60px rgba(110,147,121,.18);border:1px solid rgba(143,175,155,.4);max-width:400px;width:100%;text-align:center}
-  .paw-cluster figcaption{margin-top:16px;font-weight:600;color:var(--ink-soft)}
-  .paw-cluster figcaption b{color:var(--sage-deep)}
-
-  /* ---------- Services ---------- */
-  #services{background:var(--sage);border-radius:44px;margin:0 12px;color:#22332a}
-  #services .kicker{color:#3E5B48}
-  .sec-head{text-align:center;max-width:660px;margin:0 auto 48px}
-  .sec-head .kicker{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px;display:block}
-  .sec-head h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;margin-bottom:12px}
-  .sec-head p{font-weight:500}
-  #services .sec-head p{color:#3E5B48}
-  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .svc{background:var(--card);border-radius:var(--radius);padding:30px 26px;box-shadow:0 10px 28px rgba(34,51,42,.12);transition:transform .18s ease}
-  .svc:hover{transform:translateY(-5px) rotate(-.4deg)}
-  .svc .icon{width:54px;height:54px;border-radius:50%;background:var(--ivory);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
-  .svc .icon svg{width:28px;height:28px;stroke:var(--sage-deep);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-  .svc h3{font-size:1.14rem;font-weight:700;margin-bottom:8px}
-  .svc p{font-size:.93rem;color:var(--ink-soft)}
-
-  /* ---------- Why us ---------- */
-  .why-wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
-  .why-list{display:grid;gap:18px}
-  .why-item{display:flex;gap:18px;background:var(--card);border-radius:20px;padding:22px;border:1px solid rgba(47,47,47,.07);box-shadow:0 6px 20px rgba(47,47,47,.05)}
-  .why-item .tick{width:46px;height:46px;border-radius:50%;background:rgba(194,164,109,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-  .why-item .tick svg{width:24px;height:24px;stroke:var(--gold-dark);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-  .why-item h3{font-size:1.05rem;margin-bottom:4px}
-  .why-item p{font-size:.92rem;color:var(--ink-soft)}
-  .why-side h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:14px}
-  .why-side>p{color:var(--ink-soft);margin-bottom:24px}
-  .badge-card{background:var(--sage);border-radius:var(--radius);padding:28px;color:#22332a;font-weight:600}
-  .badge-card .big{font-size:2.2rem;font-weight:700;display:block;margin-bottom:6px}
-
-  /* ---------- Service area ---------- */
-  .area-pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:780px;margin:0 auto}
-  .pill{background:var(--card);border:2px solid rgba(143,175,155,.5);padding:11px 24px;border-radius:999px;font-weight:600;font-size:.95rem}
-  .pill.home{background:var(--sage-deep);border-color:var(--sage-deep);color:#F4F1EC}
-
-  /* ---------- Contact ---------- */
-  #contact{background:#EDE8DD;border-radius:44px;margin:0 12px}
-  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
-  .contact-info h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:14px}
-  .contact-info>p{color:var(--ink-soft);margin-bottom:26px}
-  .info-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-weight:600}
-  .info-row .dot{width:44px;height:44px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-  .info-row .dot svg{width:21px;height:21px;fill:#F4F1EC}
-  .info-row a{color:var(--sage-deep);font-weight:700}
-  .quote-form{background:var(--card);border-radius:var(--radius);padding:34px;box-shadow:0 16px 44px rgba(47,47,47,.08)}
-  .quote-form h3{font-size:1.3rem;margin-bottom:6px}
-  .quote-form>p{font-size:.92rem;color:var(--ink-soft);margin-bottom:22px}
-  .field{margin-bottom:16px}
-  .field label{display:block;font-size:.85rem;font-weight:700;margin-bottom:6px}
-  .field input,.field textarea,.field select{width:100%;padding:12px 14px;border:1.5px solid rgba(47,47,47,.18);border-radius:14px;font:inherit;font-size:.95rem;background:var(--ivory);color:var(--ink);font-weight:500}
-  .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--sage-deep)}
-  .field textarea{min-height:110px;resize:vertical}
-
-  /* ---------- Footer ---------- */
-  footer{background:#22332a;color:#C9CFC6;padding:44px 0 30px;text-align:center}
-  footer .brand{justify-content:center;color:#F4F1EC;margin-bottom:6px}
-  footer p{font-size:.9rem;margin:6px 0}
-  footer a{color:#F4F1EC;font-weight:600}
-  .credit{margin-top:22px;padding-top:18px;border-top:1px solid rgba(244,241,236,.15);font-size:.82rem;color:#9AA79B}
-
-  /* ---------- Reveal ---------- */
-  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
-  .reveal.visible{opacity:1;transform:none}
-
-  /* ---------- Responsive ---------- */
-  @media(max-width:900px){
-    .hero-grid{grid-template-columns:1fr}
-    .hero-art{order:-1}
-    .svc-grid{grid-template-columns:repeat(2,1fr)}
-    .why-wrap{grid-template-columns:1fr}
-    .contact-grid{grid-template-columns:1fr}
-  }
-  @media(max-width:640px){
-    section{padding:56px 0}
-    .nav-links{position:fixed;top:66px;right:0;left:0;background:var(--ivory);flex-direction:column;align-items:flex-start;padding:20px 24px 26px;gap:18px;border-bottom:1px solid rgba(47,47,47,.12);transform:translateY(-140%);transition:transform .25s ease}
-    .nav-links.open{transform:none}
-    .burger{display:block}
-    .svc-grid{grid-template-columns:1fr}
-    #services,#contact{margin:0 6px;border-radius:30px}
-    .hero{padding:56px 0 44px}
-  }
+:root{
+  --espresso:#33200F;    /* dark tinted brown */
+  --espresso-2:#241609;  /* alt dark */
+  --parchment:#EFE3CB;   /* 60% */
+  --paper:#F7EFDD;
+  --olive:#7B5E3B;       /* 30% */
+  --burgundy:#5C2E2E;    /* sparing support */
+  --tan:#C9A971;         /* 10% accent */
+  --offwhite:#F3EBD9;
+  --ink:#2E2114;
+  --muted:#6E5C42;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,"Times New Roman",serif;background:var(--parchment);color:var(--ink);line-height:1.7;overflow-x:hidden}
+.sans{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+/* ---------- NAV ---------- */
+header{position:sticky;top:0;z-index:100;background:rgba(36,22,9,.96);backdrop-filter:blur(6px);border-bottom:2px solid var(--tan)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 0}
+.brand{text-decoration:none;color:var(--offwhite)}
+.brand b{display:block;font-size:1.12rem;letter-spacing:1.5px}
+.brand small{font-family:"Segoe UI",system-ui,sans-serif;font-size:.62rem;letter-spacing:3.5px;color:var(--tan);text-transform:uppercase}
+nav.links{display:flex;gap:28px;font-family:"Segoe UI",system-ui,sans-serif}
+nav.links a{color:var(--offwhite);text-decoration:none;font-size:.9rem;letter-spacing:.4px}
+nav.links a:hover{color:var(--tan)}
+.cta-btn{font-family:"Segoe UI",system-ui,sans-serif;background:var(--tan);color:#241609;font-weight:800;padding:10px 20px;border-radius:40px;text-decoration:none;font-size:.9rem;white-space:nowrap}
+.cta-btn:hover{background:#dcb981}
+.menu-toggle{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.menu-toggle span{display:block;width:26px;height:3px;background:var(--offwhite);margin:5px 0;border-radius:2px}
+@media(max-width:820px){
+  nav.links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--espresso-2);flex-direction:column;padding:18px 26px 24px;gap:16px;border-bottom:2px solid var(--tan)}
+  nav.links.open{display:flex}
+  .menu-toggle{display:block}
+  .nav .cta-btn{display:none}
+  header .wrap{position:relative}
+}
+/* ---------- HERO ---------- */
+.hero{background:var(--espresso);color:var(--offwhite);padding:86px 0 96px;position:relative;overflow:hidden;text-align:center}
+.hero::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse 600px 300px at 50% -60px, rgba(201,169,113,.22), transparent 70%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:44px;
+  background:var(--parchment);clip-path:ellipse(60% 100% at 50% 100%)}
+.hero .wrap{position:relative}
+.hero-eyebrow{font-family:"Segoe UI",system-ui,sans-serif;display:inline-block;font-size:.75rem;letter-spacing:4px;text-transform:uppercase;color:var(--tan);border:1px solid rgba(201,169,113,.5);padding:8px 20px;border-radius:40px;margin-bottom:22px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.4rem);line-height:1.08;font-weight:400;margin-bottom:18px}
+.hero h1 em{font-style:italic;color:var(--tan)}
+.hero .sub{font-family:"Segoe UI",system-ui,sans-serif;font-size:1.05rem;color:#cfbfa3;max-width:36rem;margin:0 auto 32px}
+.hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:26px;font-family:"Segoe UI",system-ui,sans-serif}
+.btn-primary{background:var(--tan);color:#241609;font-weight:800;padding:15px 34px;border-radius:40px;text-decoration:none;font-size:1rem}
+.btn-primary:hover{background:#dcb981}
+.btn-ghost{border:2px solid rgba(201,169,113,.55);color:var(--offwhite);font-weight:700;padding:13px 30px;border-radius:40px;text-decoration:none;font-size:1rem}
+.btn-ghost:hover{border-color:var(--tan);color:var(--tan)}
+.hero-badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;font-family:"Segoe UI",system-ui,sans-serif;font-size:.82rem;color:#cfbfa3}
+.hero-badges span{border:1px solid rgba(201,169,113,.35);border-radius:40px;padding:7px 16px}
+/* ---------- SECTIONS ---------- */
+section{padding:78px 0}
+.eyebrow{font-family:"Segoe UI",system-ui,sans-serif;font-size:.75rem;letter-spacing:4px;text-transform:uppercase;color:#8a6f3e;font-weight:700;margin-bottom:12px;text-align:center}
+.title{font-size:clamp(1.9rem,4.4vw,2.9rem);font-weight:400;text-align:center;margin-bottom:14px;line-height:1.2}
+.title em{font-style:italic;color:#8a6f3e}
+.lede{font-family:"Segoe UI",system-ui,sans-serif;text-align:center;color:var(--muted);max-width:40rem;margin:0 auto 46px;font-size:1rem}
+/* menu cards */
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.menu-grid{grid-template-columns:1fr}}
+.dish{background:var(--paper);border-radius:14px;overflow:hidden;border:1px solid #ddd0b6;transition:transform .2s,box-shadow .2s}
+.dish:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(51,32,15,.14)}
+.dish-art{height:150px;position:relative;overflow:hidden}
+.dish-art svg{width:100%;height:100%;display:block}
+.dish-body{padding:24px}
+.dish-body .tag{font-family:"Segoe UI",system-ui,sans-serif;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--burgundy);font-weight:700}
+.dish-body h3{font-size:1.35rem;margin:8px 0 8px;font-weight:400}
+.dish-body p{font-family:"Segoe UI",system-ui,sans-serif;font-size:.92rem;color:var(--muted)}
+/* why */
+.why{background:var(--espresso);color:var(--offwhite);position:relative;overflow:hidden}
+.why .title{color:var(--offwhite)}
+.why .title em{color:var(--tan)}
+.why .lede{color:#cfbfa3}
+.why .eyebrow{color:var(--tan)}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;max-width:900px;margin:0 auto;border:1px solid rgba(201,169,113,.35);border-radius:16px;overflow:hidden}
+@media(max-width:640px){.why-grid{grid-template-columns:1fr}}
+.why-item{padding:34px;border-bottom:1px solid rgba(201,169,113,.25);border-right:1px solid rgba(201,169,113,.25)}
+.why-item:nth-child(even){border-right:0}
+.why-item:nth-last-child(-n+2){border-bottom:0}
+@media(max-width:640px){.why-item{border-right:0!important}.why-item:nth-last-child(-n+2){border-bottom:1px solid rgba(201,169,113,.25)}.why-item:last-child{border-bottom:0}}
+.why-item .n{font-size:2rem;color:var(--tan);font-style:italic;line-height:1}
+.why-item h3{font-size:1.25rem;margin:10px 0 8px;font-weight:400}
+.why-item p{font-family:"Segoe UI",system-ui,sans-serif;font-size:.92rem;color:#cfbfa3}
+/* area */
+.area-list{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:700px;margin:0 auto;font-family:"Segoe UI",system-ui,sans-serif}
+.area-list span{background:var(--paper);border:1px solid #ddd0b6;padding:10px 22px;border-radius:40px;font-size:.95rem}
+.area-list span.home{background:var(--espresso);color:var(--offwhite);border-color:var(--espresso);font-weight:700}
+/* contact */
+.contact-wrap{background:var(--paper);border:1px solid #ddd0b6;border-radius:20px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:800px){.contact-wrap{grid-template-columns:1fr;padding:28px}}
+.contact-wrap h3{font-size:1.6rem;font-weight:400;margin-bottom:10px}
+.contact-wrap .sans-p{font-family:"Segoe UI",system-ui,sans-serif;color:var(--muted);font-size:.95rem;margin-bottom:20px}
+.info{display:flex;flex-direction:column;gap:14px;font-family:"Segoe UI",system-ui,sans-serif}
+.info a,.info span.v{color:var(--ink);text-decoration:none;font-weight:600;font-size:1.02rem}
+.info a:hover{color:#8a6f3e}
+.info small{display:block;font-size:.78rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:700}
+form .fld{margin-bottom:16px}
+label{display:block;font-family:"Segoe UI",system-ui,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.6px;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid #d6c7a8;border-radius:10px;font-size:1rem;font-family:"Segoe UI",system-ui,sans-serif;background:#fff;max-width:100%}
+textarea{min-height:100px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:480px){.two{grid-template-columns:1fr}}
+button.submit{font-family:"Segoe UI",system-ui,sans-serif;background:var(--espresso);color:var(--offwhite);border:0;font-weight:800;font-size:1rem;padding:15px;border-radius:40px;cursor:pointer;width:100%;margin-top:6px}
+button.submit:hover{background:#4a2f18}
+footer{background:var(--espresso-2);color:#a8946f;padding:30px 0;font-family:"Segoe UI",system-ui,sans-serif;font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+footer a{color:var(--tan);text-decoration:none}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .5s,transform .5s}
+.reveal.in{opacity:1;transform:none}
 </style>
 </head>
 <body>
 
-<header class="nav">
-  <div class="wrap nav-inner">
-    <a class="brand" href="#top">
-      <span class="paw"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="15.5" rx="4.2" ry="3.4"/><circle cx="6.5" cy="10.5" r="2.1"/><circle cx="10" cy="7.5" r="2.1"/><circle cx="14" cy="7.5" r="2.1"/><circle cx="17.5" cy="10.5" r="2.1"/></svg></span>
-      Little Paws Pet Sitting
-    </a>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-    <nav class="nav-links" id="navLinks">
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><b>MY GOLD CHEF</b><small>Catering · Chula Vista</small></a>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('nav.links').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <nav class="links">
       <a href="#services">Services</a>
       <a href="#why">Why Us</a>
       <a href="#area">Service Area</a>
       <a href="#contact">Contact</a>
-      <a href="tel:+14802175352" class="btn btn-sm">Call (480) 217-5352</a>
     </nav>
+    <a class="cta-btn" href="#contact">Book Your Date</a>
   </div>
 </header>
 
-<section class="hero" id="top">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow">Phoenix, Arizona · Small-Breed Specialists</span>
-      <h1>Big love for <em>little paws</em>, right in your home.</h1>
-      <p class="lead">Gentle, reliable pet sitting for small-breed dogs across the Valley — drop-in visits, walks and overnights, all in the comfort of your dog's own home. No kennels, no stress.</p>
-      <div class="hero-cta">
-        <a href="tel:+14802175352" class="btn">Call (480) 217-5352</a>
-        <a href="#contact" class="btn btn-outline">Get a Free Quote</a>
-      </div>
-      <div class="trust-row">
-        <span>✓ Free meet &amp; greet</span>
-        <span>✓ Photo updates every visit</span>
-        <span>✓ Locally owned LLC</span>
-      </div>
+<div class="hero" id="top">
+  <div class="wrap">
+    <span class="hero-eyebrow">Chula Vista, California</span>
+    <h1>Taquizas Your Guests<br><em>Will Talk About</em> for Weeks</h1>
+    <p class="sub">MY GOLD CHEF CATERING brings the grill to you — fresh, on-site taco catering for birthdays, weddings, quinceañeras and everything worth celebrating.</p>
+    <div class="hero-cta">
+      <a class="btn-primary" href="#contact">Get a Free Quote</a>
+      <a class="btn-ghost" href="mailto:mygoldchefcatering@gmail.com">Email Us</a>
     </div>
-    <div class="hero-art">
-      <figure class="paw-cluster">
-        <svg viewBox="0 0 240 200" role="img" aria-label="Paw print illustration">
-          <g fill="#8FAF9B" opacity=".9">
-            <ellipse cx="120" cy="128" rx="34" ry="28"/>
-            <circle cx="82" cy="92" r="14"/><circle cx="106" cy="74" r="14"/>
-            <circle cx="134" cy="74" r="14"/><circle cx="158" cy="92" r="14"/>
-          </g>
-          <g fill="#C2A46D" opacity=".75">
-            <ellipse cx="52" cy="150" rx="17" ry="14"/>
-            <circle cx="34" cy="132" r="7"/><circle cx="46" cy="123" r="7"/>
-            <circle cx="58" cy="123" r="7"/><circle cx="70" cy="132" r="7"/>
-          </g>
-          <g fill="#6E9379" opacity=".55">
-            <ellipse cx="196" cy="52" rx="20" ry="16"/>
-            <circle cx="176" cy="32" r="8"/><circle cx="189" cy="22" r="8"/>
-            <circle cx="203" cy="22" r="8"/><circle cx="216" cy="32" r="8"/>
-          </g>
-        </svg>
-        <figcaption>Trusted by little dogs <b>across the Valley</b></figcaption>
-      </figure>
+    <div class="hero-badges">
+      <span>Fresh, on-site grilling</span>
+      <span>Authentic family recipes</span>
+      <span>Weddings &amp; private events</span>
     </div>
   </div>
-</section>
+</div>
 
 <section id="services">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker">Services</span>
-      <h2>Care that fits your dog's routine</h2>
-      <p>Every visit is built around what your pup already knows and loves — same schedule, same cuddle spots, same treats.</p>
-    </div>
-    <div class="svc-grid">
-      <article class="svc reveal">
-        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg></div>
-        <h3>In-Home Pet Sitting</h3>
-        <p>Your pup stays in their own home while you're away — familiar beds, familiar routines, zero kennel stress. Ideal for vacations and long trips.</p>
-      </article>
-      <article class="svc reveal">
-        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
-        <h3>Drop-In Visits</h3>
-        <p>Quick daytime check-ins for potty breaks, fresh water, playtime and meds — perfect for workdays, errands and dinner plans.</p>
-      </article>
-      <article class="svc reveal">
-        <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 17c2-1 3-3 3-5l9-6 4 1-1 4-9 6c-2 0-4 1-6 0z"/><circle cx="7" cy="20" r="1.6"/><circle cx="11" cy="20" r="1.6"/></svg></div>
-        <h3>Dog Walking</h3>
-        <p>Neighborhood walks sized for small breeds — gentle pace, leash-safe routes, shade breaks in the Arizona heat and plenty of sniff stops.</p>
-      </article>
-      <article class="svc reveal">
-        <div class="icon"><svg viewBox="0 0 24 24"><path d="M20 13A8 8 0 1 1 11 4a6.5 6.5 0 0 0 9 9z"/></svg></div>
-        <h3>Overnight Stays</h3>
-        <p>A sitter stays overnight in your home so your dog's evening routine never changes — dinner, last potty break and bedtime cuddles included.</p>
-      </article>
-      <article class="svc reveal">
-        <div class="icon"><svg viewBox="0 0 24 24"><path d="M10 8a2.5 2.5 0 1 1 2.5 2.5c-.8 0-1 .5-1 1.2V13M10 16.5h.01"/><circle cx="12" cy="12" r="9"/></svg></div>
-        <h3>Puppy Care</h3>
-        <p>Extra-attention visits for puppies — potty training support, crate routines, feeding schedules and socialization play sessions.</p>
-      </article>
-      <article class="svc reveal">
-        <div class="icon"><svg viewBox="0 0 24 24"><path d="M10.5 4.5a3 3 0 0 1 4.2 4.2l-7 7-2.7.6.6-2.7 4.9-9.1z"/><path d="M14 6l4 4"/></svg></div>
-        <h3>Medication &amp; Special Needs</h3>
-        <p>Timed medications, special diets and senior-dog care handled with patience — plus written notes after every visit so you always know how it went.</p>
-      </article>
+    <div class="eyebrow">What We Cater</div>
+    <h2 class="title">Real Food, <em>Made in Front of You</em></h2>
+    <p class="lede">No trays sitting under heat lamps — we cook live at your event, so every taco hits the plate hot.</p>
+    <div class="menu-grid">
+      <div class="dish reveal">
+        <div class="dish-art"><svg viewBox="0 0 400 150"><rect width="400" height="150" fill="#5C2E2E"/><circle cx="200" cy="160" r="120" fill="#C9A971" opacity=".9"/><circle cx="120" cy="150" r="60" fill="#7B5E3B" opacity=".55"/><circle cx="290" cy="150" r="70" fill="#7B5E3B" opacity=".45"/><ellipse cx="200" cy="70" rx="70" ry="26" fill="#F7EFDD"/><ellipse cx="200" cy="64" rx="56" ry="18" fill="#8a6f3e"/><circle cx="180" cy="62" r="6" fill="#5C2E2E"/><circle cx="205" cy="60" r="6" fill="#2E2114"/><circle cx="222" cy="64" r="6" fill="#5C2E2E"/></svg></div>
+        <div class="dish-body"><span class="tag">Signature</span><h3>On-Site Taquizas</h3><p>Our full taquiza setup at your event — grill, trompo-style meats, handmade tortillas and all the salsas, cooked live while your guests watch.</p></div>
+      </div>
+      <div class="dish reveal">
+        <div class="dish-art"><svg viewBox="0 0 400 150"><rect width="400" height="150" fill="#7B5E3B"/><circle cx="200" cy="170" r="130" fill="#33200F"/><path d="M120 120 Q200 60 280 120 Q200 100 120 120" fill="#F7EFDD" opacity=".9"/><circle cx="165" cy="100" r="10" fill="#C9A971"/><circle cx="200" cy="95" r="10" fill="#C9A971"/><circle cx="235" cy="100" r="10" fill="#C9A971"/></svg></div>
+        <div class="dish-body"><span class="tag">Events</span><h3>Weddings &amp; Quinceañeras</h3><p>Full-service taco catering for your biggest days — setup, service and cleanup handled, with a menu tuned to your guest count and traditions.</p></div>
+      </div>
+      <div class="dish reveal">
+        <div class="dish-art"><svg viewBox="0 0 400 150"><rect width="400" height="150" fill="#33200F"/><rect x="90" y="95" width="220" height="14" rx="7" fill="#C9A971"/><rect x="140" y="70" width="120" height="26" rx="4" fill="#7B5E3B"/><circle cx="200" cy="60" r="18" fill="#5C2E2E" opacity=".85"/><rect x="110" y="109" width="180" height="6" rx="3" fill="#F7EFDD" opacity=".5"/></svg></div>
+        <div class="dish-body"><span class="tag">Business</span><h3>Corporate &amp; Office Events</h3><p>Taco bars for team lunches, grand openings and company parties — fast lines, generous portions and zero hassle for your office.</p></div>
+      </div>
+      <div class="dish reveal">
+        <div class="dish-art"><svg viewBox="0 0 400 150"><rect width="400" height="150" fill="#5C2E2E"/><circle cx="130" cy="75" r="34" fill="#F7EFDD" opacity=".95"/><circle cx="200" cy="75" r="34" fill="#F7EFDD" opacity=".85"/><circle cx="270" cy="75" r="34" fill="#F7EFDD" opacity=".95"/><circle cx="130" cy="70" r="20" fill="#8a6f3e" opacity=".6"/><circle cx="200" cy="70" r="20" fill="#5C2E2E" opacity=".4"/><circle cx="270" cy="70" r="20" fill="#8a6f3e" opacity=".6"/></svg></div>
+        <div class="dish-body"><span class="tag">Backyard</span><h3>Birthdays &amp; Family Parties</h3><p>The neighborhood taquero experience for backyard celebrations — carne asada, adobada, chicken and veggie options for every table.</p></div>
+      </div>
+      <div class="dish reveal">
+        <div class="dish-art"><svg viewBox="0 0 400 150"><rect width="400" height="150" fill="#7B5E3B"/><path d="M80 110 Q200 40 320 110 L320 150 L80 150 Z" fill="#F7EFDD" opacity=".9"/><path d="M120 105 Q200 55 280 105" stroke="#5C2E2E" stroke-width="6" fill="none" opacity=".6"/><circle cx="200" cy="95" r="8" fill="#C9A971"/></svg></div>
+        <div class="dish-body"><span class="tag">Self-Serve</span><h3>Taco Bar Stations</h3><p>Prefer self-serve? We set up a fully stocked taco bar — meats, tortillas, toppings and salsas — restocked and kept fresh all event long.</p></div>
+      </div>
+      <div class="dish reveal">
+        <div class="dish-art"><svg viewBox="0 0 400 150"><rect width="400" height="150" fill="#33200F"/><ellipse cx="200" cy="80" rx="90" ry="30" fill="#C9A971"/><ellipse cx="200" cy="72" rx="70" ry="20" fill="#F7EFDD"/><path d="M140 72 Q200 100 260 72" stroke="#8a6f3e" stroke-width="4" fill="none"/></svg></div>
+        <div class="dish-body"><span class="tag">Extras</span><h3>Sides &amp; Aguas Frescas</h3><p>Elote, esquites, rice and beans, churros and refreshing aguas frescas — the sides and drinks that complete the feast.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="why">
-  <div class="wrap why-wrap">
-    <div class="why-side reveal">
-      <h2>Why Phoenix pups love Little Paws</h2>
-      <p>We're not a big app or a rotating cast of strangers. We're a local, small-breed-focused sitting service — and your dog gets the same familiar sitter every time.</p>
-      <div class="badge-card">
-        <span class="big">Small breeds only</span>
-        Chihuahuas, Yorkies, Shih Tzus, Dachshunds, Maltese and friends — we specialize in dogs under 25 lbs, so every walk, cuddle and routine is sized right.
-      </div>
-    </div>
-    <div class="why-list">
-      <div class="why-item reveal">
-        <span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
-        <div><h3>Free Meet &amp; Greet</h3><p>We meet you and your pup before the first booking — free. If the chemistry isn't right, there's no pressure and no charge.</p></div>
-      </div>
-      <div class="why-item reveal">
-        <span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
-        <div><h3>Photo Updates Every Visit</h3><p>You get pictures and a short report after every single visit — you'll always know your pup is happy, fed and cozy.</p></div>
-      </div>
-      <div class="why-item reveal">
-        <span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
-        <div><h3>Locally Owned &amp; Operated</h3><p>Little Paws Pet Sitting LLC is a real Phoenix small business. When you book with us, your money stays in the Valley.</p></div>
-      </div>
-      <div class="why-item reveal">
-        <span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
-        <div><h3>One Sitter, Every Time</h3><p>No rotating strangers. Your dog builds a bond with their regular sitter — which means calmer visits and a happier pup.</p></div>
-      </div>
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="eyebrow">Why Us</div>
+    <h2 class="title">Why Chula Vista <em>Books Gold Chef</em></h2>
+    <p class="lede">Plenty of people sell tacos. Here's why hosts call us back for the next event.</p>
+    <div class="why-grid">
+      <div class="why-item reveal"><div class="n">01</div><h3>Cooked Live, Not Delivered</h3><p>We set up our grills at your venue and cook everything on the spot. Hot tortillas, sizzling meats — it's a show and a meal.</p></div>
+      <div class="why-item reveal"><div class="n">02</div><h3>Menus That Fit Your Event</h3><p>Intimate birthday or 200-guest wedding — we build the menu and portions around your headcount, budget and traditions.</p></div>
+      <div class="why-item reveal"><div class="n">03</div><h3>Setup &amp; Cleanup Included</h3><p>We arrive early, set everything up, serve your guests and leave the space spotless. You just enjoy the party.</p></div>
+      <div class="why-item reveal"><div class="n">04</div><h3>Everyone's Welcome at the Table</h3><p>Vegetarian and kid-friendly options on every menu, with clear labeling — nobody at your event goes hungry.</p></div>
     </div>
   </div>
 </section>
 
 <section id="area">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker">Service Area</span>
-      <h2>Serving the Phoenix Valley</h2>
-      <p>Based in Phoenix with daily routes across the East and West Valley. Just outside these areas? Call and ask — we often say yes.</p>
-    </div>
-    <div class="area-pills reveal">
-      <span class="pill home">Phoenix</span>
-      <span class="pill">Scottsdale</span>
-      <span class="pill">Tempe</span>
-      <span class="pill">Mesa</span>
-      <span class="pill">Chandler</span>
-      <span class="pill">Gilbert</span>
-      <span class="pill">Glendale</span>
-      <span class="pill">Peoria</span>
-      <span class="pill">Surprise</span>
+    <div class="eyebrow">Service Area</div>
+    <h2 class="title">Serving <em>San Diego's South Bay</em></h2>
+    <p class="lede">Based in Chula Vista — bringing the grill to events across the area.</p>
+    <div class="area-list">
+      <span class="home">Chula Vista</span>
+      <span>National City</span>
+      <span>Imperial Beach</span>
+      <span>San Diego</span>
+      <span>Bonita</span>
+      <span>Spring Valley</span>
+      <span>Lemon Grove</span>
+      <span>San Ysidro</span>
     </div>
   </div>
 </section>
 
 <section id="contact">
-  <div class="wrap contact-grid">
-    <div class="contact-info reveal">
-      <h2>Book your free meet &amp; greet</h2>
-      <p>Call, text or send the form below. Tell us about your pup — breed, age, routine — and we'll set up a free meet &amp; greet at your convenience.</p>
-      <div class="info-row">
-        <span class="dot"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
-        <span><a href="tel:+14802175352">(480) 217-5352</a></span>
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h2 class="title">Check Your <em>Date</em></h2>
+    <p class="lede">Popular weekends book up fast — tell us about your event and we'll send a quote.</p>
+    <div class="contact-wrap">
+      <div>
+        <h3>Get in touch</h3>
+        <p class="sans-p">Email is the fastest way to reach us with your event details.</p>
+        <div class="info">
+          <div><small>Email</small><a href="mailto:mygoldchefcatering@gmail.com">mygoldchefcatering@gmail.com</a></div>
+          <div><small>Based in</small><span class="v">Chula Vista, CA</span></div>
+          <div><small>Availability</small><span class="v">Booking 7 days a week</span></div>
+        </div>
       </div>
-      <div class="info-row">
-        <span class="dot"><svg viewBox="0 0 24 24"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm1 2l7 5 7-5"/></svg></span>
-        <span><a href="mailto:littlepawspetsittingllc@gmail.com">littlepawspetsittingllc@gmail.com</a></span>
-      </div>
-      <div class="info-row">
-        <span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke="#F4F1EC" stroke-width="2" fill="none" stroke-linecap="round"/></svg></span>
-        <span>Daily, 7:00 am – 9:00 pm</span>
-      </div>
+      <form id="quoteForm">
+        <div class="two">
+          <div class="fld"><label for="qname">Name</label><input id="qname" required placeholder="Your name"></div>
+          <div class="fld"><label for="qphone">Phone</label><input id="qphone" type="tel" placeholder="(555) 000-0000"></div>
+        </div>
+        <div class="fld"><label for="qtype">Event type</label><select id="qtype"><option>Birthday / Family party</option><option>Wedding</option><option>Quinceañera</option><option>Corporate / Office</option><option>Graduation</option><option>Other celebration</option></select></div>
+        <div class="two">
+          <div class="fld"><label for="qdate">Event date</label><input id="qdate" type="date"></div>
+          <div class="fld"><label for="qguests">Guest count</label><input id="qguests" type="number" min="1" placeholder="e.g. 50"></div>
+        </div>
+        <div class="fld"><label for="qmsg">Event details</label><textarea id="qmsg" placeholder="Venue city, what you have in mind..."></textarea></div>
+        <button class="submit" type="submit">Send Catering Request</button>
+      </form>
     </div>
-    <form class="quote-form reveal" id="quoteForm">
-      <h3>Request a free quote</h3>
-      <p>Fill this out and it opens an email to us — just hit send.</p>
-      <div class="field">
-        <label for="qname">Your name</label>
-        <input id="qname" type="text" required placeholder="e.g. Jessica Miller">
-      </div>
-      <div class="field">
-        <label for="qphone">Phone</label>
-        <input id="qphone" type="tel" placeholder="(480) 555-0123">
-      </div>
-      <div class="field">
-        <label for="qtype">Service needed</label>
-        <select id="qtype">
-          <option>Drop-in visits</option>
-          <option>Dog walking</option>
-          <option>Overnight stays</option>
-          <option>In-home pet sitting (vacation)</option>
-          <option>Puppy care</option>
-          <option>Something else</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="qmsg">About your pup</label>
-        <textarea id="qmsg" required placeholder="Breed, age, schedule, medications, anything we should know…"></textarea>
-      </div>
-      <button type="submit" class="btn" style="width:100%">Send Quote Request</button>
-    </form>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="#top">
-      <span class="paw"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="15.5" rx="4.2" ry="3.4"/><circle cx="6.5" cy="10.5" r="2.1"/><circle cx="10" cy="7.5" r="2.1"/><circle cx="14" cy="7.5" r="2.1"/><circle cx="17.5" cy="10.5" r="2.1"/></svg></span>
-      Little Paws Pet Sitting LLC
-    </a>
-    <p>Small-breed dog sitting · Phoenix, Arizona</p>
-    <p><a href="tel:+14802175352">(480) 217-5352</a> · <a href="mailto:littlepawspetsittingllc@gmail.com">littlepawspetsittingllc@gmail.com</a></p>
-    <p class="credit">Demo by Wahab Codes</p>
+    <span>© 2026 MY GOLD CHEF CATERING · Chula Vista, CA</span>
+    <span><a href="#">Demo by Wahab Codes</a></span>
   </div>
 </footer>
 
 <script>
-  const burger=document.getElementById('burger'),navLinks=document.getElementById('navLinks');
-  burger.addEventListener('click',()=>navLinks.classList.toggle('open'));
-  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
-
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-  document.getElementById('quoteForm').addEventListener('submit',function(e){
-    e.preventDefault();
-    const n=document.getElementById('qname').value.trim();
-    const p=document.getElementById('qphone').value.trim();
-    const t=document.getElementById('qtype').value;
-    const m=document.getElementById('qmsg').value.trim();
-    const subject=encodeURIComponent('Quote request — '+t);
-    const body=encodeURIComponent('Name: '+n+(p?'\nPhone: '+p:'')+'\nService: '+t+'\n\nAbout the pup:\n'+m);
-    window.location.href='mailto:littlepawspetsittingllc@gmail.com?subject='+subject+'&body='+body;
-  });
+document.querySelectorAll('nav.links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav.links').classList.toggle('open')));
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var body="Name: "+document.getElementById('qname').value+"%0D%0A"
+    +"Phone: "+document.getElementById('qphone').value+"%0D%0A"
+    +"Event type: "+document.getElementById('qtype').value+"%0D%0A"
+    +"Event date: "+document.getElementById('qdate').value+"%0D%0A"
+    +"Guest count: "+document.getElementById('qguests').value+"%0D%0A%0D%0A"
+    +"Details:%0D%0A"+encodeURIComponent(document.getElementById('qmsg').value);
+  window.location.href="mailto:mygoldchefcatering@gmail.com?subject="+encodeURIComponent("Catering Request — "+document.getElementById('qname').value)+"&body="+body;
+});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
 </script>
 </body>
 </html>
