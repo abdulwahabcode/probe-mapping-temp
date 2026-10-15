@@ -3,121 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Something Smells Good | Personal Chef &amp; Catering — Harker Heights, TX</title>
-<meta name="description" content="Something Smells Good — private chef dinners, weekly meal prep and event catering by Chef Robert in Harker Heights, TX.">
+<title>Multiservicio and HVAC | AC &amp; Heating Repair in Lawrenceville, GA</title>
+<meta name="description" content="Multiservicio and HVAC — AC repair, heating service and HVAC installation in Lawrenceville, GA. Se habla español. Free estimates.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --espresso:#2B1C10; --espresso2:#3E2C1C; --olive:#7B5E3B;
-  --tan:#C2A77D; --parchment:#EDE3CF; --parchment2:#F6F0E2;
-  --burgundy:#5C2E2E; --text:#33261A; --muted:#6E5F4D;
-  --offwhite:#F3EDE1;
+  --ink:#1C1F24; --slate:#2B323C; --slate2:#3A4452; --gray:#9AA3AD;
+  --cream:#F2EEE7; --brass:#C79C5A; --brass-deep:#A87F42;
+  --offwhite:#EDEBE6; --text:#24282E; --muted:#5C6470;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--parchment);line-height:1.7;font-size:16px;overflow-x:hidden}
-h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:.01em}
-.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
-section{padding:76px 0}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--cream);line-height:1.65;font-size:16px;overflow-x:hidden}
+h1,h2,h3{font-family:'Oswald',sans-serif;font-weight:600;line-height:1.12;letter-spacing:.01em;text-transform:uppercase}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
 /* NAV */
-nav{position:sticky;top:0;z-index:50;background:rgba(237,227,207,.95);backdrop-filter:blur(8px);border-bottom:1px solid #DACBA8}
+nav{position:sticky;top:0;z-index:50;background:var(--ink);border-bottom:1px solid #333a44}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.35rem;color:var(--espresso)}
-.brand svg{width:30px;height:30px}
-.links{display:flex;gap:26px;align-items:center}
-.links a{text-decoration:none;color:var(--text);font-weight:500;font-size:.94rem}
-.links a:hover{color:var(--olive)}
-.cta-btn{background:var(--olive);color:var(--offwhite);text-decoration:none;font-weight:600;padding:11px 24px;border-radius:999px;font-size:.94rem;transition:background .2s}
-.cta-btn:hover{background:var(--espresso)}
-.menu-toggle{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--espresso)}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--offwhite);font-family:'Oswald',sans-serif;font-weight:600;font-size:1.12rem;letter-spacing:.03em;text-transform:uppercase}
+.brand .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--brass),var(--brass-deep));display:flex;align-items:center;justify-content:center;font-weight:700;color:#1C1F24;font-size:1.05rem}
+.links{display:flex;gap:24px;align-items:center}
+.links a.navlink{text-decoration:none;color:#C7CDD5;font-weight:500;font-size:.93rem;text-transform:uppercase;letter-spacing:.04em}
+.links a.navlink:hover{color:var(--brass)}
+.cta-btn{background:var(--brass);color:#1C1F24;text-decoration:none;font-weight:700;padding:11px 22px;border-radius:6px;font-size:.93rem;text-transform:uppercase;letter-spacing:.04em;transition:background .2s}
+.cta-btn:hover{background:var(--brass-deep)}
+.lang{color:var(--brass)!important;font-size:.82rem!important;border:1px solid var(--brass);border-radius:999px;padding:6px 14px}
+.menu-toggle{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--offwhite)}
 /* HERO */
-.hero{background:radial-gradient(900px 520px at 50% 0%,var(--espresso2) 0%,var(--espresso) 70%);color:var(--offwhite);text-align:center;padding:100px 0 90px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;inset:18px;border:1px solid rgba(194,167,125,.35);border-radius:4px;pointer-events:none}
-.eyebrow{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--tan);margin-bottom:20px}
-.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:600;max-width:14ch;margin:0 auto 18px;color:var(--parchment2)}
-.hero h1 em{font-style:italic;color:var(--tan)}
-.hero .byline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.25rem;color:var(--tan);margin-bottom:18px}
-.hero p.sub{max-width:36rem;margin:0 auto 32px;color:#CDBFA6;font-size:1.05rem}
-.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
-.btn{display:inline-block;padding:15px 34px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem;transition:background .2s,transform .15s}
-.btn-tan{background:var(--tan);color:var(--espresso)}
-.btn-tan:hover{background:#d4ba8d}
-.btn-ghost{border:2px solid rgba(194,167,125,.6);color:var(--parchment2)}
-.btn-ghost:hover{border-color:var(--tan)}
-.trust{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;font-size:.92rem;color:#CDBFA6}
-.trust span{display:flex;align-items:center;gap:8px}
-.trust svg{width:16px;height:16px;flex:none}
-/* OFFERINGS */
-.sec-head{text-align:center;max-width:42rem;margin:0 auto 46px}
-.sec-kicker{font-size:.8rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--olive);margin-bottom:14px}
-.sec-title{font-size:clamp(1.9rem,4.6vw,2.9rem);color:var(--espresso);margin-bottom:14px}
-.sec-sub{color:var(--muted)}
-.menu-list{max-width:760px;margin:0 auto}
-.menu-item{display:grid;grid-template-columns:1fr auto;gap:8px 24px;padding:28px 6px;border-bottom:1px solid #DCCBA6;align-items:start}
-.menu-item:first-child{border-top:1px solid #DCCBA6}
-.menu-item h3{font-size:1.45rem;color:var(--espresso)}
-.menu-item .tag{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--burgundy);border:1px solid var(--burgundy);border-radius:999px;padding:5px 14px;white-space:nowrap;margin-top:4px}
-.menu-item p{grid-column:1/-1;color:var(--muted);font-size:.96rem}
+.hero{background:radial-gradient(1200px 600px at 75% 20%,#343c47 0%,var(--ink) 60%);color:var(--offwhite);padding:92px 0 80px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:0;bottom:0;left:0;width:7px;background:linear-gradient(var(--brass),var(--brass-deep))}
+.hero-split{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin-bottom:16px}
+.hero h1{font-size:clamp(2.4rem,6.4vw,4.1rem);margin-bottom:16px}
+.hero h1 .warm{color:var(--brass)}
+.hero p.sub{color:#B9C0C9;max-width:34rem;margin-bottom:28px;font-size:1.05rem}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+.btn{display:inline-block;padding:14px 30px;border-radius:6px;font-weight:700;text-decoration:none;font-size:1rem;text-transform:uppercase;letter-spacing:.04em;transition:background .2s,transform .15s}
+.btn-brass{background:var(--brass);color:#1C1F24}
+.btn-brass:hover{background:var(--brass-deep)}
+.btn-line{border:2px solid #4a5260;color:var(--offwhite)}
+.btn-line:hover{border-color:var(--brass);color:var(--brass)}
+.trust-row{display:flex;gap:22px;flex-wrap:wrap;font-size:.9rem;color:#B9C0C9}
+.trust-row span{display:flex;align-items:center;gap:8px}
+.trust-row svg{width:16px;height:16px;flex:none}
+.hero-panel{background:var(--slate);border:1px solid #444c58;border-top:4px solid var(--brass);border-radius:12px;padding:34px 30px}
+.hero-panel h3{font-size:1.2rem;color:var(--offwhite);margin-bottom:8px}
+.hero-panel .es{color:var(--brass);font-size:.95rem;font-weight:600;margin-bottom:16px;display:block}
+.hero-panel ul{list-style:none;margin-bottom:22px}
+.hero-panel li{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid #3a424d;color:#C7CDD5;font-size:.93rem}
+.hero-panel li:last-child{border:0}
+.hero-panel li svg{width:17px;height:17px;flex:none;margin-top:4px}
+/* STAT BAND */
+.stats{background:var(--brass);padding:34px 0}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+.stat h3{font-size:2rem;color:#1C1F24;margin-bottom:4px}
+.stat p{color:#3d3117;font-size:.88rem;font-weight:500;text-transform:uppercase;letter-spacing:.05em}
+/* SERVICES */
+.sec-kicker{font-size:.8rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brass-deep);margin-bottom:12px}
+.sec-title{font-size:clamp(1.8rem,4.4vw,2.7rem);color:var(--ink);margin-bottom:14px;max-width:24ch}
+.sec-sub{color:var(--muted);max-width:40rem;margin-bottom:42px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:#fff;border-radius:12px;padding:30px 26px;border-top:4px solid var(--slate);box-shadow:0 6px 22px rgba(28,31,36,.06);transition:transform .2s,border-color .2s}
+.svc:hover{transform:translateY(-5px);border-top-color:var(--brass)}
+.svc .num{font-family:'Oswald',sans-serif;font-size:.85rem;color:var(--brass-deep);letter-spacing:.1em;margin-bottom:10px}
+.svc h3{font-size:1.15rem;color:var(--ink);margin-bottom:10px}
+.svc p{font-size:.94rem;color:var(--muted)}
+.svc .es-note{display:block;margin-top:12px;font-size:.84rem;color:var(--brass-deep);font-weight:600}
 /* WHY */
-.why{background:var(--espresso);color:var(--offwhite)}
-.why .sec-kicker{color:var(--tan)}
-.why .sec-title{color:var(--parchment2)}
-.why .sec-sub{color:#CDBFA6}
-.steps{max-width:780px;margin:0 auto;display:grid;gap:0}
-.step{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:26px 0;border-bottom:1px solid rgba(194,167,125,.22)}
-.step:last-child{border:0}
-.step .n{width:52px;height:52px;border-radius:50%;background:var(--olive);color:var(--offwhite);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.3rem}
-.step h3{font-size:1.35rem;color:var(--parchment2);margin-bottom:8px}
-.step p{color:#CDBFA6;font-size:.95rem}
+.why{background:var(--ink);color:var(--offwhite)}
+.why .sec-title{color:var(--offwhite)}
+.why .sec-sub{color:#A9B1BB}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid #333a44;border-radius:14px;overflow:hidden}
+.why-cell{padding:34px 30px;border-bottom:1px solid #333a44;border-right:1px solid #333a44}
+.why-cell:nth-child(2n){border-right:0}
+.why-cell:nth-child(3),.why-cell:nth-child(4){border-bottom:0}
+.why-cell h3{font-size:1.12rem;color:var(--brass);margin-bottom:10px;display:flex;align-items:center;gap:12px}
+.why-cell h3 svg{width:24px;height:24px;flex:none}
+.why-cell p{font-size:.93rem;color:#B9C0C9}
 /* AREA */
-.area-inner{background:var(--parchment2);border:1px solid #DACBA8;border-radius:20px;padding:56px 40px;text-align:center}
-.area-inner .sec-sub{max-width:34rem;margin:0 auto}
-.towns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
-.towns span{background:var(--parchment);border:1px solid #DCCBA6;padding:10px 22px;border-radius:999px;font-weight:500;color:var(--espresso);font-size:.95rem}
+.area{background:#fff}
+.town-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.town{background:var(--cream);border:1px solid #E2DCD0;border-radius:10px;padding:16px;text-align:center;font-weight:600;color:var(--ink);font-size:.95rem}
+.town small{display:block;font-weight:400;color:var(--muted);font-size:.8rem;margin-top:2px}
 /* CONTACT */
-.contact{background:radial-gradient(900px 480px at 50% 100%,var(--espresso2) 0%,var(--espresso) 70%);color:var(--offwhite)}
-.contact .sec-kicker{color:var(--tan)}
-.contact .sec-title{color:var(--parchment2)}
-.contact .sec-sub{color:#CDBFA6}
-.contact-box{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:start;margin-top:44px}
-.info-card{border:1px solid rgba(194,167,125,.4);border-radius:16px;padding:34px 30px}
-.info-card h3{font-size:1.4rem;color:var(--tan);margin-bottom:18px}
-.info-row{display:flex;gap:12px;align-items:center;margin-bottom:16px;color:#D9CBB0}
-.info-row svg{width:20px;height:20px;flex:none;stroke:var(--tan)}
-.info-row a{color:var(--parchment2);font-weight:600;text-decoration:none}
-.info-row a:hover{color:var(--tan)}
-.note{margin-top:22px;padding-top:20px;border-top:1px solid rgba(194,167,125,.25);font-size:.9rem;color:#CDBFA6;font-style:italic}
-form{background:var(--parchment2);border-radius:16px;padding:34px 30px;color:var(--text)}
-form h3{font-size:1.5rem;color:var(--espresso);margin-bottom:6px}
-form>p{font-size:.92rem;color:var(--muted);margin-bottom:22px}
-label{display:block;font-size:.84rem;font-weight:600;margin-bottom:6px}
-input,textarea,select{width:100%;padding:12px 14px;border:1px solid #D3C19A;border-radius:10px;font-size:.95rem;font-family:inherit;background:#fff;margin-bottom:16px;max-width:100%}
+.contact{background:radial-gradient(1000px 500px at 20% 0%,#343c47 0%,var(--ink) 60%);color:var(--offwhite)}
+.contact .sec-title{color:var(--offwhite)}
+.contact .sec-sub{color:#A9B1BB}
+.contact-box{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:start;margin-top:8px}
+.info-card{background:var(--slate);border:1px solid #444c58;border-radius:12px;padding:32px 30px}
+.info-card h3{font-size:1.15rem;color:var(--brass);margin-bottom:18px}
+.info-row{display:flex;gap:12px;align-items:center;margin-bottom:16px;color:#C7CDD5}
+.info-row svg{width:20px;height:20px;flex:none;stroke:var(--brass)}
+.info-row a{color:var(--offwhite);font-weight:600;text-decoration:none}
+.info-row a:hover{color:var(--brass)}
+.hours{margin-top:20px;padding-top:20px;border-top:1px solid #3a424d;font-size:.9rem;color:#A9B1BB}
+.hours strong{color:var(--offwhite)}
+form{background:#fff;border-radius:12px;padding:32px 28px;color:var(--text)}
+form h3{font-size:1.3rem;color:var(--ink);margin-bottom:6px}
+form>p{font-size:.92rem;color:var(--muted);margin-bottom:20px}
+label{display:block;font-size:.84rem;font-weight:600;margin-bottom:6px;color:var(--text)}
+input,textarea,select{width:100%;padding:12px 14px;border:1px solid #D5D0C4;border-radius:8px;font-size:.95rem;font-family:inherit;margin-bottom:16px;max-width:100%}
 textarea{min-height:110px;resize:vertical}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-button[type=submit]{width:100%;background:var(--olive);color:var(--offwhite);border:0;padding:15px;border-radius:12px;font-weight:700;font-size:1rem;cursor:pointer}
-button[type=submit]:hover{background:var(--espresso)}
+button[type=submit]{width:100%;background:var(--brass);color:#1C1F24;border:0;padding:15px;border-radius:8px;font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:.05em;cursor:pointer}
+button[type=submit]:hover{background:var(--brass-deep)}
 /* FOOTER */
-footer{background:#1d120a;color:#A89372;padding:40px 0;text-align:center;font-size:.88rem}
-footer .foot-brand{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--parchment2);margin-bottom:8px}
-.credit{margin-top:14px;font-size:.8rem;color:#7d6a4e}
-.credit a{color:var(--tan);text-decoration:none}
+footer{background:#141619;color:#8b939e;padding:38px 0;text-align:center;font-size:.88rem}
+footer .foot-brand{font-family:'Oswald',sans-serif;font-size:1.25rem;color:var(--offwhite);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+.credit{margin-top:14px;font-size:.8rem;color:#5f6772}
+.credit a{color:var(--brass);text-decoration:none}
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
 .reveal.in{opacity:1;transform:none}
 @media(max-width:860px){
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .hero-split{grid-template-columns:1fr}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .town-grid{grid-template-columns:repeat(2,1fr)}
   .contact-box{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .why-cell{border-right:0;border-bottom:1px solid #333a44}
+  .why-cell:nth-child(3){border-bottom:1px solid #333a44}
+  .why-cell:last-child{border-bottom:0}
 }
 @media(max-width:560px){
-  .links{position:absolute;top:66px;left:0;right:0;background:var(--parchment);flex-direction:column;align-items:flex-start;padding:18px 24px;gap:14px;display:none;border-bottom:1px solid #DACBA8}
+  .svc-grid{grid-template-columns:1fr}
+  .links{position:absolute;top:66px;left:0;right:0;background:var(--ink);flex-direction:column;align-items:flex-start;padding:18px 24px;gap:14px;display:none;border-bottom:1px solid #333a44}
   .links.open{display:flex}
   .menu-toggle{display:block}
-  section{padding:56px 0}
-  .hero{padding:76px 0 64px}
-  .area-inner{padding:40px 24px}
-  .row2{grid-template-columns:1fr}
-  .step{grid-template-columns:52px 1fr}
+  section{padding:54px 0}
+  .hero{padding:70px 0 60px}
 }
 </style>
 </head>
@@ -125,70 +142,98 @@ footer .foot-brand{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-
 
 <nav>
   <div class="wrap nav-in">
-    <a class="brand" href="#top">
-      <svg viewBox="0 0 32 32" fill="none"><path d="M16 4c-4 5-6 9-6 14a6 6 0 0 0 12 0c0-5-2-9-6-14z" stroke="#3E2C1C" stroke-width="2.2" fill="#C2A77D" fill-opacity=".35"/><path d="M16 10v12M16 14l-4-2M16 17l4-3" stroke="#3E2C1C" stroke-width="1.8" stroke-linecap="round"/></svg>
-      Something Smells Good
-    </a>
+    <a class="brand" href="#top"><span class="mark">M</span> Multiservicio &amp; HVAC</a>
     <button class="menu-toggle" id="menuBtn" aria-label="Menu">☰</button>
     <div class="links" id="navLinks">
-      <a href="#services">Offerings</a>
-      <a href="#why">Why Us</a>
-      <a href="#area">Service Area</a>
-      <a href="#contact">Contact</a>
-      <a class="cta-btn" href="#contact">Book a Tasting Call</a>
+      <a class="navlink" href="#services">Services</a>
+      <a class="navlink" href="#why">Why Us</a>
+      <a class="navlink" href="#area">Service Area</a>
+      <a class="navlink" href="#contact">Contact</a>
+      <a class="lang" href="#contact">Se habla español</a>
+      <a class="cta-btn" href="#contact">Free Quote</a>
     </div>
   </div>
 </nav>
 
 <header class="hero" id="top">
-  <div class="wrap">
-    <span class="eyebrow reveal">Harker Heights, Texas · Personal Chef &amp; Catering</span>
-    <h1 class="reveal">Restaurant-worthy food,<br><em>served at your table.</em></h1>
-    <div class="byline reveal">by Chef Robert</div>
-    <p class="sub reveal">Something Smells Good brings a personal chef into your home or event — custom menus, fresh ingredients, and zero dishes for you to wash.</p>
-    <div class="hero-actions reveal">
-      <a class="btn btn-tan" href="#contact">Book a Tasting Call</a>
-      <a class="btn btn-ghost" href="mailto:ssgcatering@yahoo.com?subject=Catering%20inquiry%20—%20Something%20Smells%20Good">Email Chef Robert</a>
+  <div class="wrap hero-split">
+    <div>
+      <span class="eyebrow reveal">Lawrenceville, GA · Heating &amp; Cooling Experts</span>
+      <h1 class="reveal">Georgia heat is brutal.<br><span class="warm">Your home shouldn't be.</span></h1>
+      <p class="sub reveal">Multiservicio and HVAC keeps Lawrenceville homes cool in August and warm in January — fast repairs, honest pricing, and technicians who speak your language.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-brass" href="#contact">Get a Free Quote</a>
+        <a class="btn btn-line" href="mailto:multiserviciohvac@gmail.com?subject=Quote%20request%20—%20Multiservicio%20and%20HVAC">Email Us</a>
+      </div>
+      <div class="trust-row reveal">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="#C79C5A" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Free estimates</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="#C79C5A" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Se habla español</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="#C79C5A" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Same-week service</span>
+      </div>
     </div>
-    <div class="trust reveal">
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="#C2A77D" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Custom menus</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="#C2A77D" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> We cook, serve &amp; clean</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="#C2A77D" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Dietary needs welcome</span>
-    </div>
+    <aside class="hero-panel reveal">
+      <h3>AC out? Heater struggling?</h3>
+      <span class="es">¿Su aire acondicionado no funciona? Llámenos hoy.</span>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#C79C5A" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Upfront pricing before we touch a wrench</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#C79C5A" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> All major brands serviced</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#C79C5A" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Residential &amp; small commercial</li>
+      </ul>
+      <a class="btn btn-brass" style="width:100%;text-align:center" href="#contact">Request Service</a>
+    </aside>
   </div>
 </header>
 
+<div class="stats">
+  <div class="wrap">
+    <div class="stat reveal"><h3>Free</h3><p>Estimates</p></div>
+    <div class="stat reveal"><h3>Same</h3><p>Week Service</p></div>
+    <div class="stat reveal"><h3>2</h3><p>Languages Spoken</p></div>
+    <div class="stat reveal"><h3>GA</h3><p>Licensed &amp; Insured</p></div>
+  </div>
+</div>
+
 <section id="services">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="sec-kicker">Offerings</p>
-      <h2 class="sec-title">From weeknight dinners to wedding feasts</h2>
-      <p class="sec-sub">Every menu is built around your tastes, your guests, and your occasion. Call for pricing — it depends on the menu, the headcount, and the event.</p>
-    </div>
-    <div class="menu-list">
-      <div class="menu-item reveal">
-        <h3>Private Chef In-Home Dinners</h3><span class="tag">Most loved</span>
-        <p>Chef Robert cooks a multi-course dinner in your kitchen for you and your guests — date nights, birthdays, anniversaries. You sit back; we handle everything including cleanup.</p>
+    <p class="sec-kicker reveal">Our services</p>
+    <h2 class="sec-title reveal">Heating &amp; cooling, handled right</h2>
+    <p class="sec-sub reveal">One call covers the whole system — diagnosis, repair, and full replacement when that's the smarter move.</p>
+    <div class="svc-grid">
+      <div class="svc reveal">
+        <div class="num">01</div>
+        <h3>AC Repair &amp; Diagnostics</h3>
+        <p>Blowing warm air, strange noises, or not turning on at all? We pinpoint the fault and fix it — compressors, capacitors, refrigerant leaks, electrical issues.</p>
+        <span class="es-note">Reparación de aire acondicionado</span>
       </div>
-      <div class="menu-item reveal">
-        <h3>Weekly Meal Prep</h3><span class="tag">Busy families</span>
-        <p>Fresh, home-style meals prepared in bulk for your week ahead — portioned, labeled, and ready to heat. Built around your family's tastes and dietary needs.</p>
+      <div class="svc reveal">
+        <div class="num">02</div>
+        <h3>Heating System Repair</h3>
+        <p>Furnaces and heat pumps serviced and repaired so cold snaps never catch you off guard. Ignition, blower, and thermostat faults resolved fast.</p>
+        <span class="es-note">Reparación de calefacción</span>
       </div>
-      <div class="menu-item reveal">
-        <h3>Event &amp; Party Catering</h3><span class="tag">Up to 100 guests</span>
-        <p>Birthdays, graduations, church gatherings, reunions. Buffet or plated service with a menu designed for your crowd and your budget.</p>
+      <div class="svc reveal">
+        <div class="num">03</div>
+        <h3>New HVAC Installation</h3>
+        <p>When repair costs more than replacement, we size and install a new system matched to your home — and haul the old unit away.</p>
+        <span class="es-note">Instalación de sistemas nuevos</span>
       </div>
-      <div class="menu-item reveal">
-        <h3>Holiday Feasts</h3><span class="tag">Seasonal</span>
-        <p>Thanksgiving, Christmas, Easter — the full spread without the full-day kitchen marathon. Traditional favorites plus a few signature twists.</p>
+      <div class="svc reveal">
+        <div class="num">04</div>
+        <h3>Preventive Maintenance Tune-Ups</h3>
+        <p>A seasonal tune-up catches small problems early, keeps efficiency high, and extends the life of your system. Cheaper than an emergency call.</p>
+        <span class="es-note">Mantenimiento preventivo</span>
       </div>
-      <div class="menu-item reveal">
-        <h3>Corporate Lunch Catering</h3><span class="tag">Businesses</span>
-        <p>Office lunches, trainings, and client meetings catered on time and on budget. Drop-off or full service — your team just shows up hungry.</p>
+      <div class="svc reveal">
+        <div class="num">05</div>
+        <h3>Ductwork Repair &amp; Sealing</h3>
+        <p>Leaky or disconnected ducts waste energy and leave rooms uneven. We seal and repair duct runs so conditioned air actually reaches you.</p>
+        <span class="es-note">Reparación de ductos</span>
       </div>
-      <div class="menu-item reveal">
-        <h3>Cooking Lessons &amp; Demos</h3><span class="tag">Learn with us</span>
-        <p>Want to sharpen your own skills? Chef Robert teaches hands-on sessions in your kitchen — from knife basics to full dinner-party menus.</p>
+      <div class="svc reveal">
+        <div class="num">06</div>
+        <h3>Thermostat Installation</h3>
+        <p>Programmable and smart thermostats installed and configured, so your schedule — not a broken dial — controls your comfort.</p>
+        <span class="es-note">Instalación de termostatos</span>
       </div>
     </div>
   </div>
@@ -196,93 +241,82 @@ footer .foot-brand{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-
 
 <section class="why" id="why">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="sec-kicker">Why Something Smells Good</p>
-      <h2 class="sec-title">It's not catering. It's personal.</h2>
-      <p class="sec-sub">Big catering companies serve hundreds. We serve you.</p>
-    </div>
-    <div class="steps">
-      <div class="step reveal">
-        <div class="n">1</div>
-        <div><h3>A chef, not a catering line</h3><p>Chef Robert plans, cooks, and serves your event himself — the person you talk to is the person in your kitchen.</p></div>
+    <p class="sec-kicker reveal" style="color:var(--brass)">Why choose us</p>
+    <h2 class="sec-title reveal">Straight talk. Solid work.</h2>
+    <p class="sec-sub reveal">HVAC is full of upsells and jargon. We do it differently.</p>
+    <div class="why-grid reveal">
+      <div class="why-cell">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="#C79C5A" stroke-width="2"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/></svg> Licensed &amp; insured</h3>
+        <p>We carry the licensing and insurance Georgia requires for HVAC work — your home and your wallet stay protected.</p>
       </div>
-      <div class="step reveal">
-        <div class="n">2</div>
-        <div><h3>Menus built around you</h3><p>Allergies, picky eaters, family recipes you want recreated — your menu is designed from a real conversation, not a template.</p></div>
+      <div class="why-cell">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="#C79C5A" stroke-width="2"><path d="M4 5h16v11H4zM4 16l3 4h10l3-4M8 9h8"/></svg> Upfront pricing</h3>
+        <p>You approve the price before we start. If we find something extra mid-job, we stop and ask — never just bill it.</p>
       </div>
-      <div class="step reveal">
-        <div class="n">3</div>
-        <div><h3>Full service, zero stress</h3><p>Shopping, cooking, serving, and cleanup are all included. You enjoy your guests; we handle everything else.</p></div>
+      <div class="why-cell">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="#C79C5A" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z"/></svg> Se habla español</h3>
+        <p>Explain the problem in the language you're comfortable with. Bilingual service from quote to final walkthrough.</p>
       </div>
-      <div class="step reveal">
-        <div class="n">4</div>
-        <div><h3>Local and flexible</h3><p>Based in Harker Heights with deep roots in Central Texas. Small changes and last-minute tweaks? That's what we're here for.</p></div>
+      <div class="why-cell">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="#C79C5A" stroke-width="2"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg> Fast response</h3>
+        <p>A dead AC in a Georgia summer is an emergency. We prioritize no-cool and no-heat calls with same-week scheduling.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="area">
+<section class="area" id="area">
   <div class="wrap">
-    <div class="area-inner reveal">
-      <p class="sec-kicker">Service area</p>
-      <h2 class="sec-title">Serving Central Texas</h2>
-      <p class="sec-sub">Based in Harker Heights, Texas. We travel to surrounding towns for private dinners and catered events.</p>
-      <div class="towns">
-        <span>Harker Heights</span><span>Killeen</span><span>Temple</span><span>Belton</span><span>Copperas Cove</span><span>Nolanville</span><span>Salado</span>
-      </div>
+    <p class="sec-kicker reveal">Service area</p>
+    <h2 class="sec-title reveal">Serving Lawrenceville &amp; Gwinnett County</h2>
+    <p class="sec-sub reveal">Based in Lawrenceville, Georgia. We run regular service routes across the metro's northeast side.</p>
+    <div class="town-grid reveal">
+      <div class="town">Lawrenceville<small>Home base</small></div>
+      <div class="town">Snellville</div>
+      <div class="town">Duluth</div>
+      <div class="town">Suwanee</div>
+      <div class="town">Loganville</div>
+      <div class="town">Lilburn</div>
+      <div class="town">Norcross</div>
+      <div class="town">Grayson</div>
     </div>
   </div>
 </section>
 
 <section class="contact" id="contact">
   <div class="wrap">
-    <div class="sec-head reveal" style="margin-bottom:0">
-      <p class="sec-kicker">Get in touch</p>
-      <h2 class="sec-title">Let's plan your menu</h2>
-      <p class="sec-sub">Tell us about your occasion — date, headcount, and what you love to eat. We'll reply with ideas and a quote.</p>
-    </div>
+    <p class="sec-kicker reveal" style="color:var(--brass)">Contact</p>
+    <h2 class="sec-title reveal">Get your free quote</h2>
+    <p class="sec-sub reveal">Describe the problem or the project — we'll reply with a free estimate and the next available slot.</p>
     <div class="contact-box">
       <div class="info-card reveal">
-        <h3>Contact Chef Robert</h3>
-        <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:ssgcatering@yahoo.com">ssgcatering@yahoo.com</a></div>
-        <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Harker Heights, Texas</span></div>
-        <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span>By appointment — book ahead for weekends &amp; holidays</span></div>
-        <div class="note">Planning something special? The earlier you reach out, the more we can customize. Holiday dates fill fast.</div>
+        <h3>Reach us directly</h3>
+        <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:multiserviciohvac@gmail.com">multiserviciohvac@gmail.com</a></div>
+        <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Lawrenceville, Georgia</span></div>
+        <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z"/></svg><span>English &amp; Español</span></div>
+        <div class="hours">
+          <strong>Hours:</strong> Monday – Saturday, 8am – 6pm.<br>No-cool / no-heat emergencies get priority scheduling.
+        </div>
       </div>
       <form class="reveal" id="quoteForm">
-        <h3>Request a quote</h3>
+        <h3>Request service</h3>
         <p>Your message opens in your email app — nothing is stored online.</p>
         <label for="qName">Your name</label>
         <input id="qName" type="text" required placeholder="Your full name">
         <label for="qEmail">Your email</label>
         <input id="qEmail" type="email" required placeholder="you@email.com">
-        <div class="row2">
-          <div>
-            <label for="qService">Occasion</label>
-            <select id="qService">
-              <option>Private chef dinner</option>
-              <option>Weekly meal prep</option>
-              <option>Event / party catering</option>
-              <option>Holiday feast</option>
-              <option>Corporate lunch</option>
-              <option>Cooking lesson</option>
-              <option>Something else</option>
-            </select>
-          </div>
-          <div>
-            <label for="qGuests">Approx. guests</label>
-            <select id="qGuests">
-              <option>2 – 6</option>
-              <option>7 – 20</option>
-              <option>21 – 50</option>
-              <option>51 – 100</option>
-              <option>100+</option>
-            </select>
-          </div>
-        </div>
-        <label for="qMsg">Tell us about the occasion</label>
-        <textarea id="qMsg" required placeholder="e.g. Anniversary dinner for 8 on a Saturday in December. We love Italian food; one guest is gluten-free."></textarea>
+        <label for="qService">What do you need?</label>
+        <select id="qService">
+          <option>AC repair</option>
+          <option>Heating repair</option>
+          <option>New HVAC installation</option>
+          <option>Maintenance tune-up</option>
+          <option>Ductwork repair</option>
+          <option>Thermostat installation</option>
+          <option>Something else</option>
+        </select>
+        <label for="qMsg">Describe the issue</label>
+        <textarea id="qMsg" required placeholder="e.g. AC blows warm air, unit is about 8 years old."></textarea>
         <button type="submit">Send Request</button>
       </form>
     </div>
@@ -291,8 +325,8 @@ footer .foot-brand{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-
 
 <footer>
   <div class="wrap">
-    <div class="foot-brand">Something Smells Good</div>
-    <div>Harker Heights, Texas · <a href="mailto:ssgcatering@yahoo.com" style="color:#C2A77D">ssgcatering@yahoo.com</a> · Personal Chef &amp; Catering by Chef Robert</div>
+    <div class="foot-brand">Multiservicio and HVAC</div>
+    <div>Lawrenceville, Georgia · <a href="mailto:multiserviciohvac@gmail.com" style="color:#C79C5A">multiserviciohvac@gmail.com</a> · Se habla español</div>
     <div class="credit">Demo by <a href="#">Wahab Codes</a></div>
   </div>
 </footer>
@@ -313,10 +347,9 @@ document.getElementById('quoteForm').addEventListener('submit',function(e){
   var n=document.getElementById('qName').value.trim(),
       em=document.getElementById('qEmail').value.trim(),
       s=document.getElementById('qService').value,
-      g=document.getElementById('qGuests').value,
       m=document.getElementById('qMsg').value.trim();
-  var body='Name: '+n+'%0D%0AEmail: '+em+'%0D%0AOccasion: '+encodeURIComponent(s)+'%0D%0AGuests: '+encodeURIComponent(g)+'%0D%0A%0D%0ADetails:%0D%0A'+encodeURIComponent(m);
-  window.location.href='mailto:ssgcatering@yahoo.com?subject='+encodeURIComponent('Catering quote request — '+n)+'&body='+body;
+  var body='Name: '+n+'%0D%0AEmail: '+em+'%0D%0AService: '+encodeURIComponent(s)+'%0D%0A%0D%0ADetails:%0D%0A'+encodeURIComponent(m);
+  window.location.href='mailto:multiserviciohvac@gmail.com?subject='+encodeURIComponent('Service request — '+n)+'&body='+body;
 });
 </script>
 </body>
