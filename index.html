@@ -3,187 +3,192 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MY GOLD CHEF CATERING | On-Site Taco Catering in Chula Vista, CA</title>
-<meta name="description" content="MY GOLD CHEF CATERING — on-site taquizas and taco catering in Chula Vista, CA. Weddings, birthdays, quinceañeras and corporate events.">
+<title>Something Smells Good | Personal Chef &amp; Catering — Harker Heights, TX</title>
+<meta name="description" content="Something Smells Good — private chef dinners, weekly meal prep and event catering by Chef Robert in Harker Heights, TX.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --espresso:#33200F;    /* dark tinted brown */
-  --espresso-2:#241609;  /* alt dark */
-  --parchment:#EFE3CB;   /* 60% */
-  --paper:#F7EFDD;
-  --olive:#7B5E3B;       /* 30% */
-  --burgundy:#5C2E2E;    /* sparing support */
-  --tan:#C9A971;         /* 10% accent */
-  --offwhite:#F3EBD9;
-  --ink:#2E2114;
-  --muted:#6E5C42;
+  --espresso:#2B1C10; --espresso2:#3E2C1C; --olive:#7B5E3B;
+  --tan:#C2A77D; --parchment:#EDE3CF; --parchment2:#F6F0E2;
+  --burgundy:#5C2E2E; --text:#33261A; --muted:#6E5F4D;
+  --offwhite:#F3EDE1;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:Georgia,"Times New Roman",serif;background:var(--parchment);color:var(--ink);line-height:1.7;overflow-x:hidden}
-.sans{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
-.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
-/* ---------- NAV ---------- */
-header{position:sticky;top:0;z-index:100;background:rgba(36,22,9,.96);backdrop-filter:blur(6px);border-bottom:2px solid var(--tan)}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 0}
-.brand{text-decoration:none;color:var(--offwhite)}
-.brand b{display:block;font-size:1.12rem;letter-spacing:1.5px}
-.brand small{font-family:"Segoe UI",system-ui,sans-serif;font-size:.62rem;letter-spacing:3.5px;color:var(--tan);text-transform:uppercase}
-nav.links{display:flex;gap:28px;font-family:"Segoe UI",system-ui,sans-serif}
-nav.links a{color:var(--offwhite);text-decoration:none;font-size:.9rem;letter-spacing:.4px}
-nav.links a:hover{color:var(--tan)}
-.cta-btn{font-family:"Segoe UI",system-ui,sans-serif;background:var(--tan);color:#241609;font-weight:800;padding:10px 20px;border-radius:40px;text-decoration:none;font-size:.9rem;white-space:nowrap}
-.cta-btn:hover{background:#dcb981}
-.menu-toggle{display:none;background:none;border:0;cursor:pointer;padding:8px}
-.menu-toggle span{display:block;width:26px;height:3px;background:var(--offwhite);margin:5px 0;border-radius:2px}
-@media(max-width:820px){
-  nav.links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--espresso-2);flex-direction:column;padding:18px 26px 24px;gap:16px;border-bottom:2px solid var(--tan)}
-  nav.links.open{display:flex}
-  .menu-toggle{display:block}
-  .nav .cta-btn{display:none}
-  header .wrap{position:relative}
-}
-/* ---------- HERO ---------- */
-.hero{background:var(--espresso);color:var(--offwhite);padding:86px 0 96px;position:relative;overflow:hidden;text-align:center}
-.hero::before{content:"";position:absolute;inset:0;
-  background:radial-gradient(ellipse 600px 300px at 50% -60px, rgba(201,169,113,.22), transparent 70%)}
-.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:44px;
-  background:var(--parchment);clip-path:ellipse(60% 100% at 50% 100%)}
-.hero .wrap{position:relative}
-.hero-eyebrow{font-family:"Segoe UI",system-ui,sans-serif;display:inline-block;font-size:.75rem;letter-spacing:4px;text-transform:uppercase;color:var(--tan);border:1px solid rgba(201,169,113,.5);padding:8px 20px;border-radius:40px;margin-bottom:22px}
-.hero h1{font-size:clamp(2.4rem,7vw,4.4rem);line-height:1.08;font-weight:400;margin-bottom:18px}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--parchment);line-height:1.7;font-size:16px;overflow-x:hidden}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:.01em}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+section{padding:76px 0}
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(237,227,207,.95);backdrop-filter:blur(8px);border-bottom:1px solid #DACBA8}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.35rem;color:var(--espresso)}
+.brand svg{width:30px;height:30px}
+.links{display:flex;gap:26px;align-items:center}
+.links a{text-decoration:none;color:var(--text);font-weight:500;font-size:.94rem}
+.links a:hover{color:var(--olive)}
+.cta-btn{background:var(--olive);color:var(--offwhite);text-decoration:none;font-weight:600;padding:11px 24px;border-radius:999px;font-size:.94rem;transition:background .2s}
+.cta-btn:hover{background:var(--espresso)}
+.menu-toggle{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--espresso)}
+/* HERO */
+.hero{background:radial-gradient(900px 520px at 50% 0%,var(--espresso2) 0%,var(--espresso) 70%);color:var(--offwhite);text-align:center;padding:100px 0 90px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:18px;border:1px solid rgba(194,167,125,.35);border-radius:4px;pointer-events:none}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--tan);margin-bottom:20px}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:600;max-width:14ch;margin:0 auto 18px;color:var(--parchment2)}
 .hero h1 em{font-style:italic;color:var(--tan)}
-.hero .sub{font-family:"Segoe UI",system-ui,sans-serif;font-size:1.05rem;color:#cfbfa3;max-width:36rem;margin:0 auto 32px}
-.hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:26px;font-family:"Segoe UI",system-ui,sans-serif}
-.btn-primary{background:var(--tan);color:#241609;font-weight:800;padding:15px 34px;border-radius:40px;text-decoration:none;font-size:1rem}
-.btn-primary:hover{background:#dcb981}
-.btn-ghost{border:2px solid rgba(201,169,113,.55);color:var(--offwhite);font-weight:700;padding:13px 30px;border-radius:40px;text-decoration:none;font-size:1rem}
-.btn-ghost:hover{border-color:var(--tan);color:var(--tan)}
-.hero-badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;font-family:"Segoe UI",system-ui,sans-serif;font-size:.82rem;color:#cfbfa3}
-.hero-badges span{border:1px solid rgba(201,169,113,.35);border-radius:40px;padding:7px 16px}
-/* ---------- SECTIONS ---------- */
-section{padding:78px 0}
-.eyebrow{font-family:"Segoe UI",system-ui,sans-serif;font-size:.75rem;letter-spacing:4px;text-transform:uppercase;color:#8a6f3e;font-weight:700;margin-bottom:12px;text-align:center}
-.title{font-size:clamp(1.9rem,4.4vw,2.9rem);font-weight:400;text-align:center;margin-bottom:14px;line-height:1.2}
-.title em{font-style:italic;color:#8a6f3e}
-.lede{font-family:"Segoe UI",system-ui,sans-serif;text-align:center;color:var(--muted);max-width:40rem;margin:0 auto 46px;font-size:1rem}
-/* menu cards */
-.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-@media(max-width:900px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.menu-grid{grid-template-columns:1fr}}
-.dish{background:var(--paper);border-radius:14px;overflow:hidden;border:1px solid #ddd0b6;transition:transform .2s,box-shadow .2s}
-.dish:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(51,32,15,.14)}
-.dish-art{height:150px;position:relative;overflow:hidden}
-.dish-art svg{width:100%;height:100%;display:block}
-.dish-body{padding:24px}
-.dish-body .tag{font-family:"Segoe UI",system-ui,sans-serif;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--burgundy);font-weight:700}
-.dish-body h3{font-size:1.35rem;margin:8px 0 8px;font-weight:400}
-.dish-body p{font-family:"Segoe UI",system-ui,sans-serif;font-size:.92rem;color:var(--muted)}
-/* why */
-.why{background:var(--espresso);color:var(--offwhite);position:relative;overflow:hidden}
-.why .title{color:var(--offwhite)}
-.why .title em{color:var(--tan)}
-.why .lede{color:#cfbfa3}
-.why .eyebrow{color:var(--tan)}
-.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;max-width:900px;margin:0 auto;border:1px solid rgba(201,169,113,.35);border-radius:16px;overflow:hidden}
-@media(max-width:640px){.why-grid{grid-template-columns:1fr}}
-.why-item{padding:34px;border-bottom:1px solid rgba(201,169,113,.25);border-right:1px solid rgba(201,169,113,.25)}
-.why-item:nth-child(even){border-right:0}
-.why-item:nth-last-child(-n+2){border-bottom:0}
-@media(max-width:640px){.why-item{border-right:0!important}.why-item:nth-last-child(-n+2){border-bottom:1px solid rgba(201,169,113,.25)}.why-item:last-child{border-bottom:0}}
-.why-item .n{font-size:2rem;color:var(--tan);font-style:italic;line-height:1}
-.why-item h3{font-size:1.25rem;margin:10px 0 8px;font-weight:400}
-.why-item p{font-family:"Segoe UI",system-ui,sans-serif;font-size:.92rem;color:#cfbfa3}
-/* area */
-.area-list{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:700px;margin:0 auto;font-family:"Segoe UI",system-ui,sans-serif}
-.area-list span{background:var(--paper);border:1px solid #ddd0b6;padding:10px 22px;border-radius:40px;font-size:.95rem}
-.area-list span.home{background:var(--espresso);color:var(--offwhite);border-color:var(--espresso);font-weight:700}
-/* contact */
-.contact-wrap{background:var(--paper);border:1px solid #ddd0b6;border-radius:20px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
-@media(max-width:800px){.contact-wrap{grid-template-columns:1fr;padding:28px}}
-.contact-wrap h3{font-size:1.6rem;font-weight:400;margin-bottom:10px}
-.contact-wrap .sans-p{font-family:"Segoe UI",system-ui,sans-serif;color:var(--muted);font-size:.95rem;margin-bottom:20px}
-.info{display:flex;flex-direction:column;gap:14px;font-family:"Segoe UI",system-ui,sans-serif}
-.info a,.info span.v{color:var(--ink);text-decoration:none;font-weight:600;font-size:1.02rem}
-.info a:hover{color:#8a6f3e}
-.info small{display:block;font-size:.78rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:700}
-form .fld{margin-bottom:16px}
-label{display:block;font-family:"Segoe UI",system-ui,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.6px;margin-bottom:6px}
-input,select,textarea{width:100%;padding:12px 14px;border:1px solid #d6c7a8;border-radius:10px;font-size:1rem;font-family:"Segoe UI",system-ui,sans-serif;background:#fff;max-width:100%}
-textarea{min-height:100px;resize:vertical}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:480px){.two{grid-template-columns:1fr}}
-button.submit{font-family:"Segoe UI",system-ui,sans-serif;background:var(--espresso);color:var(--offwhite);border:0;font-weight:800;font-size:1rem;padding:15px;border-radius:40px;cursor:pointer;width:100%;margin-top:6px}
-button.submit:hover{background:#4a2f18}
-footer{background:var(--espresso-2);color:#a8946f;padding:30px 0;font-family:"Segoe UI",system-ui,sans-serif;font-size:.85rem}
-footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-footer a{color:var(--tan);text-decoration:none}
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .5s,transform .5s}
+.hero .byline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.25rem;color:var(--tan);margin-bottom:18px}
+.hero p.sub{max-width:36rem;margin:0 auto 32px;color:#CDBFA6;font-size:1.05rem}
+.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
+.btn{display:inline-block;padding:15px 34px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem;transition:background .2s,transform .15s}
+.btn-tan{background:var(--tan);color:var(--espresso)}
+.btn-tan:hover{background:#d4ba8d}
+.btn-ghost{border:2px solid rgba(194,167,125,.6);color:var(--parchment2)}
+.btn-ghost:hover{border-color:var(--tan)}
+.trust{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;font-size:.92rem;color:#CDBFA6}
+.trust span{display:flex;align-items:center;gap:8px}
+.trust svg{width:16px;height:16px;flex:none}
+/* OFFERINGS */
+.sec-head{text-align:center;max-width:42rem;margin:0 auto 46px}
+.sec-kicker{font-size:.8rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--olive);margin-bottom:14px}
+.sec-title{font-size:clamp(1.9rem,4.6vw,2.9rem);color:var(--espresso);margin-bottom:14px}
+.sec-sub{color:var(--muted)}
+.menu-list{max-width:760px;margin:0 auto}
+.menu-item{display:grid;grid-template-columns:1fr auto;gap:8px 24px;padding:28px 6px;border-bottom:1px solid #DCCBA6;align-items:start}
+.menu-item:first-child{border-top:1px solid #DCCBA6}
+.menu-item h3{font-size:1.45rem;color:var(--espresso)}
+.menu-item .tag{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--burgundy);border:1px solid var(--burgundy);border-radius:999px;padding:5px 14px;white-space:nowrap;margin-top:4px}
+.menu-item p{grid-column:1/-1;color:var(--muted);font-size:.96rem}
+/* WHY */
+.why{background:var(--espresso);color:var(--offwhite)}
+.why .sec-kicker{color:var(--tan)}
+.why .sec-title{color:var(--parchment2)}
+.why .sec-sub{color:#CDBFA6}
+.steps{max-width:780px;margin:0 auto;display:grid;gap:0}
+.step{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:26px 0;border-bottom:1px solid rgba(194,167,125,.22)}
+.step:last-child{border:0}
+.step .n{width:52px;height:52px;border-radius:50%;background:var(--olive);color:var(--offwhite);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.3rem}
+.step h3{font-size:1.35rem;color:var(--parchment2);margin-bottom:8px}
+.step p{color:#CDBFA6;font-size:.95rem}
+/* AREA */
+.area-inner{background:var(--parchment2);border:1px solid #DACBA8;border-radius:20px;padding:56px 40px;text-align:center}
+.area-inner .sec-sub{max-width:34rem;margin:0 auto}
+.towns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.towns span{background:var(--parchment);border:1px solid #DCCBA6;padding:10px 22px;border-radius:999px;font-weight:500;color:var(--espresso);font-size:.95rem}
+/* CONTACT */
+.contact{background:radial-gradient(900px 480px at 50% 100%,var(--espresso2) 0%,var(--espresso) 70%);color:var(--offwhite)}
+.contact .sec-kicker{color:var(--tan)}
+.contact .sec-title{color:var(--parchment2)}
+.contact .sec-sub{color:#CDBFA6}
+.contact-box{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:start;margin-top:44px}
+.info-card{border:1px solid rgba(194,167,125,.4);border-radius:16px;padding:34px 30px}
+.info-card h3{font-size:1.4rem;color:var(--tan);margin-bottom:18px}
+.info-row{display:flex;gap:12px;align-items:center;margin-bottom:16px;color:#D9CBB0}
+.info-row svg{width:20px;height:20px;flex:none;stroke:var(--tan)}
+.info-row a{color:var(--parchment2);font-weight:600;text-decoration:none}
+.info-row a:hover{color:var(--tan)}
+.note{margin-top:22px;padding-top:20px;border-top:1px solid rgba(194,167,125,.25);font-size:.9rem;color:#CDBFA6;font-style:italic}
+form{background:var(--parchment2);border-radius:16px;padding:34px 30px;color:var(--text)}
+form h3{font-size:1.5rem;color:var(--espresso);margin-bottom:6px}
+form>p{font-size:.92rem;color:var(--muted);margin-bottom:22px}
+label{display:block;font-size:.84rem;font-weight:600;margin-bottom:6px}
+input,textarea,select{width:100%;padding:12px 14px;border:1px solid #D3C19A;border-radius:10px;font-size:.95rem;font-family:inherit;background:#fff;margin-bottom:16px;max-width:100%}
+textarea{min-height:110px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+button[type=submit]{width:100%;background:var(--olive);color:var(--offwhite);border:0;padding:15px;border-radius:12px;font-weight:700;font-size:1rem;cursor:pointer}
+button[type=submit]:hover{background:var(--espresso)}
+/* FOOTER */
+footer{background:#1d120a;color:#A89372;padding:40px 0;text-align:center;font-size:.88rem}
+footer .foot-brand{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--parchment2);margin-bottom:8px}
+.credit{margin-top:14px;font-size:.8rem;color:#7d6a4e}
+.credit a{color:var(--tan);text-decoration:none}
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
 .reveal.in{opacity:1;transform:none}
+@media(max-width:860px){
+  .contact-box{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .links{position:absolute;top:66px;left:0;right:0;background:var(--parchment);flex-direction:column;align-items:flex-start;padding:18px 24px;gap:14px;display:none;border-bottom:1px solid #DACBA8}
+  .links.open{display:flex}
+  .menu-toggle{display:block}
+  section{padding:56px 0}
+  .hero{padding:76px 0 64px}
+  .area-inner{padding:40px 24px}
+  .row2{grid-template-columns:1fr}
+  .step{grid-template-columns:52px 1fr}
+}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#top"><b>MY GOLD CHEF</b><small>Catering · Chula Vista</small></a>
-    <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('nav.links').classList.toggle('open')"><span></span><span></span><span></span></button>
-    <nav class="links">
-      <a href="#services">Services</a>
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M16 4c-4 5-6 9-6 14a6 6 0 0 0 12 0c0-5-2-9-6-14z" stroke="#3E2C1C" stroke-width="2.2" fill="#C2A77D" fill-opacity=".35"/><path d="M16 10v12M16 14l-4-2M16 17l4-3" stroke="#3E2C1C" stroke-width="1.8" stroke-linecap="round"/></svg>
+      Something Smells Good
+    </a>
+    <button class="menu-toggle" id="menuBtn" aria-label="Menu">☰</button>
+    <div class="links" id="navLinks">
+      <a href="#services">Offerings</a>
       <a href="#why">Why Us</a>
       <a href="#area">Service Area</a>
       <a href="#contact">Contact</a>
-    </nav>
-    <a class="cta-btn" href="#contact">Book Your Date</a>
+      <a class="cta-btn" href="#contact">Book a Tasting Call</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow reveal">Harker Heights, Texas · Personal Chef &amp; Catering</span>
+    <h1 class="reveal">Restaurant-worthy food,<br><em>served at your table.</em></h1>
+    <div class="byline reveal">by Chef Robert</div>
+    <p class="sub reveal">Something Smells Good brings a personal chef into your home or event — custom menus, fresh ingredients, and zero dishes for you to wash.</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-tan" href="#contact">Book a Tasting Call</a>
+      <a class="btn btn-ghost" href="mailto:ssgcatering@yahoo.com?subject=Catering%20inquiry%20—%20Something%20Smells%20Good">Email Chef Robert</a>
+    </div>
+    <div class="trust reveal">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="#C2A77D" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Custom menus</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="#C2A77D" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> We cook, serve &amp; clean</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="#C2A77D" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg> Dietary needs welcome</span>
+    </div>
   </div>
 </header>
 
-<div class="hero" id="top">
-  <div class="wrap">
-    <span class="hero-eyebrow">Chula Vista, California</span>
-    <h1>Taquizas Your Guests<br><em>Will Talk About</em> for Weeks</h1>
-    <p class="sub">MY GOLD CHEF CATERING brings the grill to you — fresh, on-site taco catering for birthdays, weddings, quinceañeras and everything worth celebrating.</p>
-    <div class="hero-cta">
-      <a class="btn-primary" href="#contact">Get a Free Quote</a>
-      <a class="btn-ghost" href="mailto:mygoldchefcatering@gmail.com">Email Us</a>
-    </div>
-    <div class="hero-badges">
-      <span>Fresh, on-site grilling</span>
-      <span>Authentic family recipes</span>
-      <span>Weddings &amp; private events</span>
-    </div>
-  </div>
-</div>
-
 <section id="services">
   <div class="wrap">
-    <div class="eyebrow">What We Cater</div>
-    <h2 class="title">Real Food, <em>Made in Front of You</em></h2>
-    <p class="lede">No trays sitting under heat lamps — we cook live at your event, so every taco hits the plate hot.</p>
-    <div class="menu-grid">
-      <div class="dish reveal">
-        <div class="dish-art"><svg viewBox="0 0 400 150"><rect width="400" height="150" fill="#5C2E2E"/><circle cx="200" cy="160" r="120" fill="#C9A971" opacity=".9"/><circle cx="120" cy="150" r="60" fill="#7B5E3B" opacity=".55"/><circle cx="290" cy="150" r="70" fill="#7B5E3B" opacity=".45"/><ellipse cx="200" cy="70" rx="70" ry="26" fill="#F7EFDD"/><ellipse cx="200" cy="64" rx="56" ry="18" fill="#8a6f3e"/><circle cx="180" cy="62" r="6" fill="#5C2E2E"/><circle cx="205" cy="60" r="6" fill="#2E2114"/><circle cx="222" cy="64" r="6" fill="#5C2E2E"/></svg></div>
-        <div class="dish-body"><span class="tag">Signature</span><h3>On-Site Taquizas</h3><p>Our full taquiza setup at your event — grill, trompo-style meats, handmade tortillas and all the salsas, cooked live while your guests watch.</p></div>
+    <div class="sec-head reveal">
+      <p class="sec-kicker">Offerings</p>
+      <h2 class="sec-title">From weeknight dinners to wedding feasts</h2>
+      <p class="sec-sub">Every menu is built around your tastes, your guests, and your occasion. Call for pricing — it depends on the menu, the headcount, and the event.</p>
+    </div>
+    <div class="menu-list">
+      <div class="menu-item reveal">
+        <h3>Private Chef In-Home Dinners</h3><span class="tag">Most loved</span>
+        <p>Chef Robert cooks a multi-course dinner in your kitchen for you and your guests — date nights, birthdays, anniversaries. You sit back; we handle everything including cleanup.</p>
       </div>
-      <div class="dish reveal">
-        <div class="dish-art"><svg viewBox="0 0 400 150"><rect width="400" height="150" fill="#7B5E3B"/><circle cx="200" cy="170" r="130" fill="#33200F"/><path d="M120 120 Q200 60 280 120 Q200 100 120 120" fill="#F7EFDD" opacity=".9"/><circle cx="165" cy="100" r="10" fill="#C9A971"/><circle cx="200" cy="95" r="10" fill="#C9A971"/><circle cx="235" cy="100" r="10" fill="#C9A971"/></svg></div>
-        <div class="dish-body"><span class="tag">Events</span><h3>Weddings &amp; Quinceañeras</h3><p>Full-service taco catering for your biggest days — setup, service and cleanup handled, with a menu tuned to your guest count and traditions.</p></div>
+      <div class="menu-item reveal">
+        <h3>Weekly Meal Prep</h3><span class="tag">Busy families</span>
+        <p>Fresh, home-style meals prepared in bulk for your week ahead — portioned, labeled, and ready to heat. Built around your family's tastes and dietary needs.</p>
       </div>
-      <div class="dish reveal">
-        <div class="dish-art"><svg viewBox="0 0 400 150"><rect width="400" height="150" fill="#33200F"/><rect x="90" y="95" width="220" height="14" rx="7" fill="#C9A971"/><rect x="140" y="70" width="120" height="26" rx="4" fill="#7B5E3B"/><circle cx="200" cy="60" r="18" fill="#5C2E2E" opacity=".85"/><rect x="110" y="109" width="180" height="6" rx="3" fill="#F7EFDD" opacity=".5"/></svg></div>
-        <div class="dish-body"><span class="tag">Business</span><h3>Corporate &amp; Office Events</h3><p>Taco bars for team lunches, grand openings and company parties — fast lines, generous portions and zero hassle for your office.</p></div>
+      <div class="menu-item reveal">
+        <h3>Event &amp; Party Catering</h3><span class="tag">Up to 100 guests</span>
+        <p>Birthdays, graduations, church gatherings, reunions. Buffet or plated service with a menu designed for your crowd and your budget.</p>
       </div>
-      <div class="dish reveal">
-        <div class="dish-art"><svg viewBox="0 0 400 150"><rect width="400" height="150" fill="#5C2E2E"/><circle cx="130" cy="75" r="34" fill="#F7EFDD" opacity=".95"/><circle cx="200" cy="75" r="34" fill="#F7EFDD" opacity=".85"/><circle cx="270" cy="75" r="34" fill="#F7EFDD" opacity=".95"/><circle cx="130" cy="70" r="20" fill="#8a6f3e" opacity=".6"/><circle cx="200" cy="70" r="20" fill="#5C2E2E" opacity=".4"/><circle cx="270" cy="70" r="20" fill="#8a6f3e" opacity=".6"/></svg></div>
-        <div class="dish-body"><span class="tag">Backyard</span><h3>Birthdays &amp; Family Parties</h3><p>The neighborhood taquero experience for backyard celebrations — carne asada, adobada, chicken and veggie options for every table.</p></div>
+      <div class="menu-item reveal">
+        <h3>Holiday Feasts</h3><span class="tag">Seasonal</span>
+        <p>Thanksgiving, Christmas, Easter — the full spread without the full-day kitchen marathon. Traditional favorites plus a few signature twists.</p>
       </div>
-      <div class="dish reveal">
-        <div class="dish-art"><svg viewBox="0 0 400 150"><rect width="400" height="150" fill="#7B5E3B"/><path d="M80 110 Q200 40 320 110 L320 150 L80 150 Z" fill="#F7EFDD" opacity=".9"/><path d="M120 105 Q200 55 280 105" stroke="#5C2E2E" stroke-width="6" fill="none" opacity=".6"/><circle cx="200" cy="95" r="8" fill="#C9A971"/></svg></div>
-        <div class="dish-body"><span class="tag">Self-Serve</span><h3>Taco Bar Stations</h3><p>Prefer self-serve? We set up a fully stocked taco bar — meats, tortillas, toppings and salsas — restocked and kept fresh all event long.</p></div>
+      <div class="menu-item reveal">
+        <h3>Corporate Lunch Catering</h3><span class="tag">Businesses</span>
+        <p>Office lunches, trainings, and client meetings catered on time and on budget. Drop-off or full service — your team just shows up hungry.</p>
       </div>
-      <div class="dish reveal">
-        <div class="dish-art"><svg viewBox="0 0 400 150"><rect width="400" height="150" fill="#33200F"/><ellipse cx="200" cy="80" rx="90" ry="30" fill="#C9A971"/><ellipse cx="200" cy="72" rx="70" ry="20" fill="#F7EFDD"/><path d="M140 72 Q200 100 260 72" stroke="#8a6f3e" stroke-width="4" fill="none"/></svg></div>
-        <div class="dish-body"><span class="tag">Extras</span><h3>Sides &amp; Aguas Frescas</h3><p>Elote, esquites, rice and beans, churros and refreshing aguas frescas — the sides and drinks that complete the feast.</p></div>
+      <div class="menu-item reveal">
+        <h3>Cooking Lessons &amp; Demos</h3><span class="tag">Learn with us</span>
+        <p>Want to sharpen your own skills? Chef Robert teaches hands-on sessions in your kitchen — from knife basics to full dinner-party menus.</p>
       </div>
     </div>
   </div>
@@ -191,63 +196,94 @@ footer a{color:var(--tan);text-decoration:none}
 
 <section class="why" id="why">
   <div class="wrap">
-    <div class="eyebrow">Why Us</div>
-    <h2 class="title">Why Chula Vista <em>Books Gold Chef</em></h2>
-    <p class="lede">Plenty of people sell tacos. Here's why hosts call us back for the next event.</p>
-    <div class="why-grid">
-      <div class="why-item reveal"><div class="n">01</div><h3>Cooked Live, Not Delivered</h3><p>We set up our grills at your venue and cook everything on the spot. Hot tortillas, sizzling meats — it's a show and a meal.</p></div>
-      <div class="why-item reveal"><div class="n">02</div><h3>Menus That Fit Your Event</h3><p>Intimate birthday or 200-guest wedding — we build the menu and portions around your headcount, budget and traditions.</p></div>
-      <div class="why-item reveal"><div class="n">03</div><h3>Setup &amp; Cleanup Included</h3><p>We arrive early, set everything up, serve your guests and leave the space spotless. You just enjoy the party.</p></div>
-      <div class="why-item reveal"><div class="n">04</div><h3>Everyone's Welcome at the Table</h3><p>Vegetarian and kid-friendly options on every menu, with clear labeling — nobody at your event goes hungry.</p></div>
+    <div class="sec-head reveal">
+      <p class="sec-kicker">Why Something Smells Good</p>
+      <h2 class="sec-title">It's not catering. It's personal.</h2>
+      <p class="sec-sub">Big catering companies serve hundreds. We serve you.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="n">1</div>
+        <div><h3>A chef, not a catering line</h3><p>Chef Robert plans, cooks, and serves your event himself — the person you talk to is the person in your kitchen.</p></div>
+      </div>
+      <div class="step reveal">
+        <div class="n">2</div>
+        <div><h3>Menus built around you</h3><p>Allergies, picky eaters, family recipes you want recreated — your menu is designed from a real conversation, not a template.</p></div>
+      </div>
+      <div class="step reveal">
+        <div class="n">3</div>
+        <div><h3>Full service, zero stress</h3><p>Shopping, cooking, serving, and cleanup are all included. You enjoy your guests; we handle everything else.</p></div>
+      </div>
+      <div class="step reveal">
+        <div class="n">4</div>
+        <div><h3>Local and flexible</h3><p>Based in Harker Heights with deep roots in Central Texas. Small changes and last-minute tweaks? That's what we're here for.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="area">
   <div class="wrap">
-    <div class="eyebrow">Service Area</div>
-    <h2 class="title">Serving <em>San Diego's South Bay</em></h2>
-    <p class="lede">Based in Chula Vista — bringing the grill to events across the area.</p>
-    <div class="area-list">
-      <span class="home">Chula Vista</span>
-      <span>National City</span>
-      <span>Imperial Beach</span>
-      <span>San Diego</span>
-      <span>Bonita</span>
-      <span>Spring Valley</span>
-      <span>Lemon Grove</span>
-      <span>San Ysidro</span>
+    <div class="area-inner reveal">
+      <p class="sec-kicker">Service area</p>
+      <h2 class="sec-title">Serving Central Texas</h2>
+      <p class="sec-sub">Based in Harker Heights, Texas. We travel to surrounding towns for private dinners and catered events.</p>
+      <div class="towns">
+        <span>Harker Heights</span><span>Killeen</span><span>Temple</span><span>Belton</span><span>Copperas Cove</span><span>Nolanville</span><span>Salado</span>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="contact">
+<section class="contact" id="contact">
   <div class="wrap">
-    <div class="eyebrow">Contact</div>
-    <h2 class="title">Check Your <em>Date</em></h2>
-    <p class="lede">Popular weekends book up fast — tell us about your event and we'll send a quote.</p>
-    <div class="contact-wrap">
-      <div>
-        <h3>Get in touch</h3>
-        <p class="sans-p">Email is the fastest way to reach us with your event details.</p>
-        <div class="info">
-          <div><small>Email</small><a href="mailto:mygoldchefcatering@gmail.com">mygoldchefcatering@gmail.com</a></div>
-          <div><small>Based in</small><span class="v">Chula Vista, CA</span></div>
-          <div><small>Availability</small><span class="v">Booking 7 days a week</span></div>
-        </div>
+    <div class="sec-head reveal" style="margin-bottom:0">
+      <p class="sec-kicker">Get in touch</p>
+      <h2 class="sec-title">Let's plan your menu</h2>
+      <p class="sec-sub">Tell us about your occasion — date, headcount, and what you love to eat. We'll reply with ideas and a quote.</p>
+    </div>
+    <div class="contact-box">
+      <div class="info-card reveal">
+        <h3>Contact Chef Robert</h3>
+        <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:ssgcatering@yahoo.com">ssgcatering@yahoo.com</a></div>
+        <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Harker Heights, Texas</span></div>
+        <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span>By appointment — book ahead for weekends &amp; holidays</span></div>
+        <div class="note">Planning something special? The earlier you reach out, the more we can customize. Holiday dates fill fast.</div>
       </div>
-      <form id="quoteForm">
-        <div class="two">
-          <div class="fld"><label for="qname">Name</label><input id="qname" required placeholder="Your name"></div>
-          <div class="fld"><label for="qphone">Phone</label><input id="qphone" type="tel" placeholder="(555) 000-0000"></div>
+      <form class="reveal" id="quoteForm">
+        <h3>Request a quote</h3>
+        <p>Your message opens in your email app — nothing is stored online.</p>
+        <label for="qName">Your name</label>
+        <input id="qName" type="text" required placeholder="Your full name">
+        <label for="qEmail">Your email</label>
+        <input id="qEmail" type="email" required placeholder="you@email.com">
+        <div class="row2">
+          <div>
+            <label for="qService">Occasion</label>
+            <select id="qService">
+              <option>Private chef dinner</option>
+              <option>Weekly meal prep</option>
+              <option>Event / party catering</option>
+              <option>Holiday feast</option>
+              <option>Corporate lunch</option>
+              <option>Cooking lesson</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div>
+            <label for="qGuests">Approx. guests</label>
+            <select id="qGuests">
+              <option>2 – 6</option>
+              <option>7 – 20</option>
+              <option>21 – 50</option>
+              <option>51 – 100</option>
+              <option>100+</option>
+            </select>
+          </div>
         </div>
-        <div class="fld"><label for="qtype">Event type</label><select id="qtype"><option>Birthday / Family party</option><option>Wedding</option><option>Quinceañera</option><option>Corporate / Office</option><option>Graduation</option><option>Other celebration</option></select></div>
-        <div class="two">
-          <div class="fld"><label for="qdate">Event date</label><input id="qdate" type="date"></div>
-          <div class="fld"><label for="qguests">Guest count</label><input id="qguests" type="number" min="1" placeholder="e.g. 50"></div>
-        </div>
-        <div class="fld"><label for="qmsg">Event details</label><textarea id="qmsg" placeholder="Venue city, what you have in mind..."></textarea></div>
-        <button class="submit" type="submit">Send Catering Request</button>
+        <label for="qMsg">Tell us about the occasion</label>
+        <textarea id="qMsg" required placeholder="e.g. Anniversary dinner for 8 on a Saturday in December. We love Italian food; one guest is gluten-free."></textarea>
+        <button type="submit">Send Request</button>
       </form>
     </div>
   </div>
@@ -255,25 +291,33 @@ footer a{color:var(--tan);text-decoration:none}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 MY GOLD CHEF CATERING · Chula Vista, CA</span>
-    <span><a href="#">Demo by Wahab Codes</a></span>
+    <div class="foot-brand">Something Smells Good</div>
+    <div>Harker Heights, Texas · <a href="mailto:ssgcatering@yahoo.com" style="color:#C2A77D">ssgcatering@yahoo.com</a> · Personal Chef &amp; Catering by Chef Robert</div>
+    <div class="credit">Demo by <a href="#">Wahab Codes</a></div>
   </div>
 </footer>
 
 <script>
-document.querySelectorAll('nav.links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav.links').classList.toggle('open')));
+document.getElementById('menuBtn').addEventListener('click',function(){
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('#navLinks a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open')});
+});
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
 document.getElementById('quoteForm').addEventListener('submit',function(e){
   e.preventDefault();
-  var body="Name: "+document.getElementById('qname').value+"%0D%0A"
-    +"Phone: "+document.getElementById('qphone').value+"%0D%0A"
-    +"Event type: "+document.getElementById('qtype').value+"%0D%0A"
-    +"Event date: "+document.getElementById('qdate').value+"%0D%0A"
-    +"Guest count: "+document.getElementById('qguests').value+"%0D%0A%0D%0A"
-    +"Details:%0D%0A"+encodeURIComponent(document.getElementById('qmsg').value);
-  window.location.href="mailto:mygoldchefcatering@gmail.com?subject="+encodeURIComponent("Catering Request — "+document.getElementById('qname').value)+"&body="+body;
+  var n=document.getElementById('qName').value.trim(),
+      em=document.getElementById('qEmail').value.trim(),
+      s=document.getElementById('qService').value,
+      g=document.getElementById('qGuests').value,
+      m=document.getElementById('qMsg').value.trim();
+  var body='Name: '+n+'%0D%0AEmail: '+em+'%0D%0AOccasion: '+encodeURIComponent(s)+'%0D%0AGuests: '+encodeURIComponent(g)+'%0D%0A%0D%0ADetails:%0D%0A'+encodeURIComponent(m);
+  window.location.href='mailto:ssgcatering@yahoo.com?subject='+encodeURIComponent('Catering quote request — '+n)+'&body='+body;
 });
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
-document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
 </script>
 </body>
 </html>
