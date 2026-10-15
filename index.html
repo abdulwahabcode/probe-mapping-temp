@@ -3,287 +3,384 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VQZ Detailing | Mobile Car Detailing in Albuquerque, NM</title>
-<meta name="description" content="VQZ Detailing — premium mobile car detailing in Albuquerque, NM. We come to you. Interior detail, wash & wax, ceramic sealant and more.">
+<title>Little Paws Pet Sitting LLC | Small-Breed Dog Sitting in Phoenix, AZ</title>
+<meta name="description" content="Little Paws Pet Sitting LLC — gentle, in-home pet sitting for small-breed dogs across Phoenix, Arizona. Free meet & greet, photo updates every visit. Call (480) 217-5352.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --graphite:#161A21;    /* tinted black, 60% */
-  --graphite-2:#0F1218;  /* alt dark */
-  --steel:#232A35;       /* 30% panels */
-  --silver:#9AA6B5;      /* secondary text/lines */
-  --brass:#C79C5A;       /* 10% accent */
-  --brass-deep:#A67F42;
-  --offwhite:#EAEFF5;
-  --muted:#8B97A5;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--graphite);color:var(--offwhite);line-height:1.65;overflow-x:hidden}
-.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-/* ---------- NAV ---------- */
-header{position:sticky;top:0;z-index:100;background:rgba(15,18,24,.96);border-bottom:1px solid #2c3542}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 0}
-.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--offwhite)}
-.brand-mark{width:38px;height:38px;background:linear-gradient(135deg,var(--brass),var(--brass-deep));transform:skewX(-10deg);display:grid;place-items:center;flex:none}
-.brand-mark svg{width:22px;height:22px;stroke:#14100a;fill:none;stroke-width:2.2;transform:skewX(10deg)}
-.brand b{font-size:1.05rem;letter-spacing:2.5px}
-.brand small{display:block;font-size:.62rem;letter-spacing:3px;color:var(--silver)}
-nav.links{display:flex;gap:28px}
-nav.links a{color:var(--silver);text-decoration:none;font-size:.9rem;letter-spacing:1px}
-nav.links a:hover{color:var(--brass)}
-.book-btn{background:var(--brass);color:#14100a;font-weight:800;padding:10px 22px;text-decoration:none;font-size:.9rem;letter-spacing:.5px;transform:skewX(-10deg);display:inline-block}
-.book-btn span{display:inline-block;transform:skewX(10deg)}
-.book-btn:hover{background:#d9ae68}
-.menu-toggle{display:none;background:none;border:0;cursor:pointer;padding:8px}
-.menu-toggle span{display:block;width:26px;height:3px;background:var(--offwhite);margin:5px 0;border-radius:2px}
-@media(max-width:820px){
-  nav.links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--graphite-2);flex-direction:column;padding:18px 24px 22px;gap:16px;border-bottom:1px solid #2c3542}
-  nav.links.open{display:flex}
-  .menu-toggle{display:block}
-  .nav .book-btn{display:none}
-  header .wrap{position:relative}
-}
-/* ---------- HERO ---------- */
-.hero{position:relative;padding:96px 0 110px;overflow:hidden;
-  background:linear-gradient(120deg,var(--graphite-2) 55%,var(--steel) 55.2%,var(--steel) 100%)}
-.hero::before{content:"";position:absolute;inset:0;
-  background:repeating-linear-gradient(115deg,transparent 0 90px,rgba(199,156,90,.05) 90px 92px)}
-.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:center}
-.hero-eyebrow{display:inline-block;font-size:.75rem;letter-spacing:4px;color:var(--brass);text-transform:uppercase;margin-bottom:16px;border-left:3px solid var(--brass);padding-left:14px}
-.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.06;font-weight:800;margin-bottom:18px;letter-spacing:-.5px}
-.hero h1 .shine{color:var(--brass)}
-.hero p.lead{color:var(--muted);font-size:1.05rem;max-width:32rem;margin-bottom:30px}
-.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
-.btn-primary{background:var(--brass);color:#14100a;font-weight:800;padding:15px 34px;text-decoration:none;font-size:1rem;transform:skewX(-10deg);display:inline-block}
-.btn-primary span{display:inline-block;transform:skewX(10deg)}
-.btn-primary:hover{background:#d9ae68}
-.btn-ghost{border:1px solid #3d4756;color:var(--offwhite);font-weight:700;padding:14px 30px;text-decoration:none;font-size:1rem}
-.btn-ghost:hover{border-color:var(--brass);color:var(--brass)}
-.hero-stats{display:flex;gap:30px;flex-wrap:wrap}
-.hstat .mono{font-size:.72rem;letter-spacing:2px;color:var(--silver)}
-.hstat b{display:block;font-size:1.5rem;color:var(--offwhite)}
-.hero-panel{background:var(--steel);border:1px solid #39434f;border-top:4px solid var(--brass);padding:28px;transform:skewX(-4deg)}
-.hero-panel>div{transform:skewX(4deg)}
-.hero-panel h3{font-size:1.2rem;margin-bottom:8px}
-.hero-panel p{color:var(--muted);font-size:.93rem;margin-bottom:18px}
-.checklist{list-style:none;font-size:.93rem}
-.checklist li{padding:9px 0;border-bottom:1px dashed #39434f;display:flex;gap:10px;align-items:center}
-.checklist li:last-child{border:0}
-.checklist .dot{width:10px;height:10px;background:var(--brass);transform:rotate(45deg);flex:none}
-@media(max-width:820px){.hero-grid{grid-template-columns:1fr}.hero{background:var(--graphite-2);padding:64px 0 76px}}
-/* ---------- SECTIONS ---------- */
-section{padding:76px 0}
-.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:40px;flex-wrap:wrap}
-.sec-tag{font-size:.75rem;letter-spacing:4px;text-transform:uppercase;color:var(--brass);font-weight:700;margin-bottom:10px}
-.sec-title{font-size:clamp(1.7rem,4vw,2.6rem);font-weight:800;letter-spacing:-.5px}
-.sec-sub{color:var(--muted);max-width:36rem;margin-top:8px}
-/* services */
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-@media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.svc-grid{grid-template-columns:1fr}}
-.svc{background:var(--steel);border:1px solid #2e3641;padding:26px;position:relative;transition:border-color .2s,transform .2s}
-.svc:hover{border-color:var(--brass);transform:translateY(-4px)}
-.svc .code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.72rem;letter-spacing:2px;color:var(--silver);display:block;margin-bottom:12px}
-.svc h3{font-size:1.12rem;margin-bottom:8px}
-.svc p{font-size:.9rem;color:var(--muted)}
-.svc .bar{position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--brass);transition:width .3s}
-.svc:hover .bar{width:100%}
-/* why */
-.why{background:var(--graphite-2);border-top:1px solid #232a35;border-bottom:1px solid #232a35}
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid #2e3641}
-@media(max-width:900px){.why-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.why-grid{grid-template-columns:1fr}}
-.why-cell{padding:30px 26px;border-right:1px solid #2e3641}
-.why-cell:last-child{border-right:0}
-@media(max-width:900px){.why-cell{border-bottom:1px solid #2e3641}}
-.why-cell .mono{color:var(--brass);font-size:.72rem;letter-spacing:3px}
-.why-cell h3{font-size:1.05rem;margin:10px 0 8px}
-.why-cell p{font-size:.88rem;color:var(--muted)}
-/* area */
-.area-strip{background:var(--steel);border:1px solid #2e3641;padding:36px;text-align:center}
-.area-strip h3{font-size:1.3rem;margin-bottom:6px}
-.area-strip p{color:var(--muted);font-size:.93rem;margin-bottom:22px}
-.towns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
-.towns span{border:1px solid #3d4756;padding:8px 18px;font-size:.88rem;letter-spacing:1px;color:var(--silver)}
-.towns span.home{background:var(--brass);border-color:var(--brass);color:#14100a;font-weight:800}
-/* contact */
-.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px}
-@media(max-width:800px){.contact-grid{grid-template-columns:1fr}}
-.info-card{background:var(--steel);border:1px solid #2e3641;padding:32px}
-.info-card h3{font-size:1.3rem;margin-bottom:6px}
-.info-card>p{color:var(--muted);font-size:.92rem;margin-bottom:22px}
-.info-line{padding:13px 0;border-bottom:1px dashed #39434f}
-.info-line small{display:block;font-size:.72rem;letter-spacing:2.5px;color:var(--silver);text-transform:uppercase}
-.info-line a,.info-line b{color:var(--offwhite);text-decoration:none;font-size:1.05rem;font-weight:700}
-.info-line a:hover{color:var(--brass)}
-form{background:var(--graphite-2);border:1px solid #2e3641;padding:32px}
-form h3{margin-bottom:4px;font-size:1.25rem}
-form>p{color:var(--muted);font-size:.9rem;margin-bottom:20px}
-label{display:block;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--silver);margin:16px 0 7px;font-weight:700}
-input,select,textarea{width:100%;padding:12px 14px;background:var(--steel);border:1px solid #3d4756;border-radius:0;color:var(--offwhite);font-size:1rem;font-family:inherit;max-width:100%}
-input:focus,select:focus,textarea:focus{outline:1px solid var(--brass);border-color:var(--brass)}
-select option{background:var(--steel)}
-textarea{min-height:100px;resize:vertical}
-button.submit{background:var(--brass);color:#14100a;border:0;font-weight:800;font-size:1rem;padding:15px;width:100%;margin-top:20px;cursor:pointer;letter-spacing:1px}
-button.submit:hover{background:#d9ae68}
-footer{background:#0c0e12;border-top:1px solid #232a35;padding:28px 0;font-size:.85rem;color:var(--silver)}
-footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-footer a{color:var(--brass);text-decoration:none}
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .5s,transform .5s}
-.reveal.in{opacity:1;transform:none}
+  :root{
+    --ivory:#F4F1EC;      /* 60% */
+    --sage:#8FAF9B;       /* 30% sections */
+    --sage-deep:#6E9379;
+    --card:#FFFFFF;
+    --ink:#2F2F2F;        /* charcoal text */
+    --ink-soft:#5C5C5C;
+    --gold:#C2A46D;       /* 10% accent — CTAs only */
+    --gold-dark:#A98850;
+    --radius:26px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden}
+  body{font-family:"Quicksand",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--ivory);color:var(--ink);line-height:1.65;font-weight:500;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{line-height:1.2;letter-spacing:-0.01em}
+  a{color:inherit;text-decoration:none}
+  svg{max-width:100%}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  section{padding:76px 0}
+
+  /* ---------- Nav ---------- */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(244,241,236,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(47,47,47,.1)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.2rem}
+  .brand .paw{width:34px;height:34px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .brand .paw svg{width:20px;height:20px;fill:#F4F1EC}
+  .nav-links{display:flex;gap:26px;align-items:center;font-weight:600;font-size:.95rem}
+  .nav-links a{color:var(--ink-soft)}
+  .nav-links a:hover{color:var(--sage-deep)}
+  .btn{display:inline-block;background:var(--gold);color:#2F2F2F;padding:13px 28px;border-radius:999px;font-weight:700;font-size:.95rem;border:none;cursor:pointer;transition:transform .15s ease,background .15s ease;font-family:inherit}
+  .btn:hover{background:var(--gold-dark);transform:translateY(-1px)}
+  .btn-sm{padding:9px 20px;font-size:.87rem}
+  .btn-outline{background:transparent;border:2px solid var(--sage-deep);color:var(--sage-deep)}
+  .btn-outline:hover{background:var(--sage-deep);color:#F4F1EC}
+  .burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
+  .burger span{display:block;width:24px;height:3px;background:var(--ink);margin:5px 0;border-radius:3px}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;padding:80px 0 70px;overflow:hidden;background:
+    radial-gradient(circle at 88% 12%, rgba(143,175,155,.35) 0 90px, transparent 91px),
+    radial-gradient(circle at 8% 88%, rgba(194,164,109,.22) 0 70px, transparent 71px)}
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-deep);background:rgba(143,175,155,.18);padding:8px 18px;border-radius:999px;margin-bottom:20px}
+  .hero h1{font-size:clamp(2.3rem,5.2vw,3.6rem);font-weight:700;margin-bottom:18px}
+  .hero h1 em{font-style:normal;color:var(--sage-deep)}
+  .hero p.lead{font-size:1.1rem;color:var(--ink-soft);max-width:33rem;margin-bottom:30px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:28px}
+  .phone-big{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem}
+  .phone-big .ic{width:44px;height:44px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center}
+  .phone-big .ic svg{width:22px;height:22px;fill:#F4F1EC}
+  .trust-row{display:flex;gap:26px;flex-wrap:wrap;font-size:.9rem;color:var(--ink-soft);font-weight:600}
+  .hero-art{display:flex;justify-content:center}
+  .paw-cluster{background:var(--card);border-radius:40px;padding:44px 36px;box-shadow:0 26px 60px rgba(110,147,121,.18);border:1px solid rgba(143,175,155,.4);max-width:400px;width:100%;text-align:center}
+  .paw-cluster figcaption{margin-top:16px;font-weight:600;color:var(--ink-soft)}
+  .paw-cluster figcaption b{color:var(--sage-deep)}
+
+  /* ---------- Services ---------- */
+  #services{background:var(--sage);border-radius:44px;margin:0 12px;color:#22332a}
+  #services .kicker{color:#3E5B48}
+  .sec-head{text-align:center;max-width:660px;margin:0 auto 48px}
+  .sec-head .kicker{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px;display:block}
+  .sec-head h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;margin-bottom:12px}
+  .sec-head p{font-weight:500}
+  #services .sec-head p{color:#3E5B48}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .svc{background:var(--card);border-radius:var(--radius);padding:30px 26px;box-shadow:0 10px 28px rgba(34,51,42,.12);transition:transform .18s ease}
+  .svc:hover{transform:translateY(-5px) rotate(-.4deg)}
+  .svc .icon{width:54px;height:54px;border-radius:50%;background:var(--ivory);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .svc .icon svg{width:28px;height:28px;stroke:var(--sage-deep);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .svc h3{font-size:1.14rem;font-weight:700;margin-bottom:8px}
+  .svc p{font-size:.93rem;color:var(--ink-soft)}
+
+  /* ---------- Why us ---------- */
+  .why-wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .why-list{display:grid;gap:18px}
+  .why-item{display:flex;gap:18px;background:var(--card);border-radius:20px;padding:22px;border:1px solid rgba(47,47,47,.07);box-shadow:0 6px 20px rgba(47,47,47,.05)}
+  .why-item .tick{width:46px;height:46px;border-radius:50%;background:rgba(194,164,109,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .why-item .tick svg{width:24px;height:24px;stroke:var(--gold-dark);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .why-item h3{font-size:1.05rem;margin-bottom:4px}
+  .why-item p{font-size:.92rem;color:var(--ink-soft)}
+  .why-side h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:14px}
+  .why-side>p{color:var(--ink-soft);margin-bottom:24px}
+  .badge-card{background:var(--sage);border-radius:var(--radius);padding:28px;color:#22332a;font-weight:600}
+  .badge-card .big{font-size:2.2rem;font-weight:700;display:block;margin-bottom:6px}
+
+  /* ---------- Service area ---------- */
+  .area-pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:780px;margin:0 auto}
+  .pill{background:var(--card);border:2px solid rgba(143,175,155,.5);padding:11px 24px;border-radius:999px;font-weight:600;font-size:.95rem}
+  .pill.home{background:var(--sage-deep);border-color:var(--sage-deep);color:#F4F1EC}
+
+  /* ---------- Contact ---------- */
+  #contact{background:#EDE8DD;border-radius:44px;margin:0 12px}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+  .contact-info h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:14px}
+  .contact-info>p{color:var(--ink-soft);margin-bottom:26px}
+  .info-row{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-weight:600}
+  .info-row .dot{width:44px;height:44px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .info-row .dot svg{width:21px;height:21px;fill:#F4F1EC}
+  .info-row a{color:var(--sage-deep);font-weight:700}
+  .quote-form{background:var(--card);border-radius:var(--radius);padding:34px;box-shadow:0 16px 44px rgba(47,47,47,.08)}
+  .quote-form h3{font-size:1.3rem;margin-bottom:6px}
+  .quote-form>p{font-size:.92rem;color:var(--ink-soft);margin-bottom:22px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-size:.85rem;font-weight:700;margin-bottom:6px}
+  .field input,.field textarea,.field select{width:100%;padding:12px 14px;border:1.5px solid rgba(47,47,47,.18);border-radius:14px;font:inherit;font-size:.95rem;background:var(--ivory);color:var(--ink);font-weight:500}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--sage-deep)}
+  .field textarea{min-height:110px;resize:vertical}
+
+  /* ---------- Footer ---------- */
+  footer{background:#22332a;color:#C9CFC6;padding:44px 0 30px;text-align:center}
+  footer .brand{justify-content:center;color:#F4F1EC;margin-bottom:6px}
+  footer p{font-size:.9rem;margin:6px 0}
+  footer a{color:#F4F1EC;font-weight:600}
+  .credit{margin-top:22px;padding-top:18px;border-top:1px solid rgba(244,241,236,.15);font-size:.82rem;color:#9AA79B}
+
+  /* ---------- Reveal ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.visible{opacity:1;transform:none}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-art{order:-1}
+    .svc-grid{grid-template-columns:repeat(2,1fr)}
+    .why-wrap{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+  }
+  @media(max-width:640px){
+    section{padding:56px 0}
+    .nav-links{position:fixed;top:66px;right:0;left:0;background:var(--ivory);flex-direction:column;align-items:flex-start;padding:20px 24px 26px;gap:18px;border-bottom:1px solid rgba(47,47,47,.12);transform:translateY(-140%);transition:transform .25s ease}
+    .nav-links.open{transform:none}
+    .burger{display:block}
+    .svc-grid{grid-template-columns:1fr}
+    #services,#contact{margin:0 6px;border-radius:30px}
+    .hero{padding:56px 0 44px}
+  }
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap nav">
+<header class="nav">
+  <div class="wrap nav-inner">
     <a class="brand" href="#top">
-      <span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M5 17c2-4 4-7 7-10l5-3 2 2-3 5c-3 3-6 5-10 7l-3 1z"/><path d="M4 21l4-4"/></svg></span>
-      <span><b>VQZ</b><small>DETAILING · ABQ</small></span>
+      <span class="paw"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="15.5" rx="4.2" ry="3.4"/><circle cx="6.5" cy="10.5" r="2.1"/><circle cx="10" cy="7.5" r="2.1"/><circle cx="14" cy="7.5" r="2.1"/><circle cx="17.5" cy="10.5" r="2.1"/></svg></span>
+      Little Paws Pet Sitting
     </a>
-    <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('nav.links').classList.toggle('open')"><span></span><span></span><span></span></button>
-    <nav class="links">
-      <a href="#services">SERVICES</a>
-      <a href="#why">WHY VQZ</a>
-      <a href="#area">SERVICE AREA</a>
-      <a href="#contact">CONTACT</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+14802175352" class="btn btn-sm">Call (480) 217-5352</a>
     </nav>
-    <a class="book-btn" href="#contact"><span>Book a Detail</span></a>
   </div>
 </header>
 
-<div class="hero" id="top">
+<section class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <span class="hero-eyebrow">Mobile Detailing · Albuquerque, NM</span>
-      <h1>Showroom <span class="shine">Shine.</span><br>Zero Driveway Time.</h1>
-      <p class="lead">VQZ Detailing brings the full detail shop to your driveway — water, power and everything we need on board. Your car never leaves home.</p>
+      <span class="eyebrow">Phoenix, Arizona · Small-Breed Specialists</span>
+      <h1>Big love for <em>little paws</em>, right in your home.</h1>
+      <p class="lead">Gentle, reliable pet sitting for small-breed dogs across the Valley — drop-in visits, walks and overnights, all in the comfort of your dog's own home. No kennels, no stress.</p>
       <div class="hero-cta">
-        <a class="btn-primary" href="#contact"><span>Get a Free Quote</span></a>
-        <a class="btn-ghost" href="mailto:vqz.detailing17@gmail.com">Email VQZ</a>
+        <a href="tel:+14802175352" class="btn">Call (480) 217-5352</a>
+        <a href="#contact" class="btn btn-outline">Get a Free Quote</a>
       </div>
-      <div class="hero-stats">
-        <div class="hstat"><span class="mono">/ MOBILE</span><b>100% mobile</b></div>
-        <div class="hstat"><span class="mono">/ FREE</span><b>Free estimates</b></div>
-        <div class="hstat"><span class="mono">/ LOCAL</span><b>ABQ based</b></div>
-      </div>
-    </div>
-    <div class="hero-panel reveal">
-      <div>
-        <h3>How it works</h3>
-        <p>Simple: you book, we drive to you, and the car comes back to life.</p>
-        <ul class="checklist">
-          <li><span class="dot"></span>You pick a time and place</li>
-          <li><span class="dot"></span>We arrive with water &amp; power</li>
-          <li><span class="dot"></span>We detail — you go about your day</li>
-          <li><span class="dot"></span>Final walkaround before we leave</li>
-        </ul>
+      <div class="trust-row">
+        <span>✓ Free meet &amp; greet</span>
+        <span>✓ Photo updates every visit</span>
+        <span>✓ Locally owned LLC</span>
       </div>
     </div>
-  </div>
-</div>
-
-<section id="services">
-  <div class="wrap">
-    <div class="sec-head">
-      <div><div class="sec-tag">Services</div><h2 class="sec-title">Detail Packages &amp; Services</h2></div>
-      <p class="sec-sub">From maintenance washes to full transformations — every service done by hand, with pro-grade products.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc reveal"><span class="code">/ 01</span><h3>Full Interior Detail</h3><p>Deep vacuum, steam-cleaned upholstery, leather cleaned and conditioned, vents, crevices and glass — the cabin feels new again.</p><span class="bar"></span></div>
-      <div class="svc reveal"><span class="code">/ 02</span><h3>Exterior Wash &amp; Wax</h3><p>Two-bucket hand wash, wheels and tires deep-cleaned and dressed, finished with a durable spray wax for months of gloss.</p><span class="bar"></span></div>
-      <div class="svc reveal"><span class="code">/ 03</span><h3>Clay Bar Decontamination</h3><p>Clay treatment pulls embedded road grime and industrial fallout from the paint, leaving it glass-smooth before wax or sealant.</p><span class="bar"></span></div>
-      <div class="svc reveal"><span class="code">/ 04</span><h3>Headlight Restoration</h3><p>Cloudy, yellowed headlights sanded, polished and sealed — brighter night driving and a sharper front end.</p><span class="bar"></span></div>
-      <div class="svc reveal"><span class="code">/ 05</span><h3>Engine Bay Cleaning</h3><p>Careful degrease and dressing of the engine bay — no damage, just a clean engine that looks as good as it runs.</p><span class="bar"></span></div>
-      <div class="svc reveal"><span class="code">/ 06</span><h3>Ceramic Spray Sealant</h3><p>A long-lasting ceramic spray coating for serious water beading and paint protection — the easy upgrade that keeps working.</p><span class="bar"></span></div>
+    <div class="hero-art">
+      <figure class="paw-cluster">
+        <svg viewBox="0 0 240 200" role="img" aria-label="Paw print illustration">
+          <g fill="#8FAF9B" opacity=".9">
+            <ellipse cx="120" cy="128" rx="34" ry="28"/>
+            <circle cx="82" cy="92" r="14"/><circle cx="106" cy="74" r="14"/>
+            <circle cx="134" cy="74" r="14"/><circle cx="158" cy="92" r="14"/>
+          </g>
+          <g fill="#C2A46D" opacity=".75">
+            <ellipse cx="52" cy="150" rx="17" ry="14"/>
+            <circle cx="34" cy="132" r="7"/><circle cx="46" cy="123" r="7"/>
+            <circle cx="58" cy="123" r="7"/><circle cx="70" cy="132" r="7"/>
+          </g>
+          <g fill="#6E9379" opacity=".55">
+            <ellipse cx="196" cy="52" rx="20" ry="16"/>
+            <circle cx="176" cy="32" r="8"/><circle cx="189" cy="22" r="8"/>
+            <circle cx="203" cy="22" r="8"/><circle cx="216" cy="32" r="8"/>
+          </g>
+        </svg>
+        <figcaption>Trusted by little dogs <b>across the Valley</b></figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<section class="why" id="why">
+<section id="services">
   <div class="wrap">
-    <div class="sec-head">
-      <div><div class="sec-tag">Why VQZ</div><h2 class="sec-title">Why ABQ Chooses VQZ</h2></div>
+    <div class="sec-head reveal">
+      <span class="kicker">Services</span>
+      <h2>Care that fits your dog's routine</h2>
+      <p>Every visit is built around what your pup already knows and loves — same schedule, same cuddle spots, same treats.</p>
     </div>
-    <div class="why-grid">
-      <div class="why-cell reveal"><span class="mono">/ MOB</span><h3>We Come to You</h3><p>Home, office or apartment — our rig carries its own water and power. No shop visit, no waiting room.</p></div>
-      <div class="why-cell reveal"><span class="mono">/ PRO</span><h3>Pro Products, Real Technique</h3><p>Proper wash methods, quality chemicals and careful technique — no swirl marks, no shortcuts.</p></div>
-      <div class="why-cell reveal"><span class="mono">/ FIX</span><h3>Upfront Pricing</h3><p>You approve the price before we start. The quote you get is the price you pay.</p></div>
-      <div class="why-cell reveal"><span class="mono">/ LOC</span><h3>Local &amp; Accountable</h3><p>Albuquerque based. Final walkaround on every job — if it's not right, we make it right.</p></div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg></div>
+        <h3>In-Home Pet Sitting</h3>
+        <p>Your pup stays in their own home while you're away — familiar beds, familiar routines, zero kennel stress. Ideal for vacations and long trips.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+        <h3>Drop-In Visits</h3>
+        <p>Quick daytime check-ins for potty breaks, fresh water, playtime and meds — perfect for workdays, errands and dinner plans.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 17c2-1 3-3 3-5l9-6 4 1-1 4-9 6c-2 0-4 1-6 0z"/><circle cx="7" cy="20" r="1.6"/><circle cx="11" cy="20" r="1.6"/></svg></div>
+        <h3>Dog Walking</h3>
+        <p>Neighborhood walks sized for small breeds — gentle pace, leash-safe routes, shade breaks in the Arizona heat and plenty of sniff stops.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M20 13A8 8 0 1 1 11 4a6.5 6.5 0 0 0 9 9z"/></svg></div>
+        <h3>Overnight Stays</h3>
+        <p>A sitter stays overnight in your home so your dog's evening routine never changes — dinner, last potty break and bedtime cuddles included.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M10 8a2.5 2.5 0 1 1 2.5 2.5c-.8 0-1 .5-1 1.2V13M10 16.5h.01"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Puppy Care</h3>
+        <p>Extra-attention visits for puppies — potty training support, crate routines, feeding schedules and socialization play sessions.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M10.5 4.5a3 3 0 0 1 4.2 4.2l-7 7-2.7.6.6-2.7 4.9-9.1z"/><path d="M14 6l4 4"/></svg></div>
+        <h3>Medication &amp; Special Needs</h3>
+        <p>Timed medications, special diets and senior-dog care handled with patience — plus written notes after every visit so you always know how it went.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap why-wrap">
+    <div class="why-side reveal">
+      <h2>Why Phoenix pups love Little Paws</h2>
+      <p>We're not a big app or a rotating cast of strangers. We're a local, small-breed-focused sitting service — and your dog gets the same familiar sitter every time.</p>
+      <div class="badge-card">
+        <span class="big">Small breeds only</span>
+        Chihuahuas, Yorkies, Shih Tzus, Dachshunds, Maltese and friends — we specialize in dogs under 25 lbs, so every walk, cuddle and routine is sized right.
+      </div>
+    </div>
+    <div class="why-list">
+      <div class="why-item reveal">
+        <span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <div><h3>Free Meet &amp; Greet</h3><p>We meet you and your pup before the first booking — free. If the chemistry isn't right, there's no pressure and no charge.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <div><h3>Photo Updates Every Visit</h3><p>You get pictures and a short report after every single visit — you'll always know your pup is happy, fed and cozy.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <div><h3>Locally Owned &amp; Operated</h3><p>Little Paws Pet Sitting LLC is a real Phoenix small business. When you book with us, your money stays in the Valley.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <div><h3>One Sitter, Every Time</h3><p>No rotating strangers. Your dog builds a bond with their regular sitter — which means calmer visits and a happier pup.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="area">
   <div class="wrap">
-    <div class="area-strip reveal">
-      <div class="sec-tag">Service Area</div>
-      <h3>Serving the Greater Albuquerque Area</h3>
-      <p>Fully mobile — if you're in these areas, we'll come to you.</p>
-      <div class="towns">
-        <span class="home">Albuquerque</span>
-        <span>Rio Rancho</span>
-        <span>Corrales</span>
-        <span>Bernalillo</span>
-        <span>Los Lunas</span>
-        <span>Bosque Farms</span>
-        <span>Edgewood</span>
-        <span>Tijeras</span>
-      </div>
+    <div class="sec-head reveal">
+      <span class="kicker">Service Area</span>
+      <h2>Serving the Phoenix Valley</h2>
+      <p>Based in Phoenix with daily routes across the East and West Valley. Just outside these areas? Call and ask — we often say yes.</p>
+    </div>
+    <div class="area-pills reveal">
+      <span class="pill home">Phoenix</span>
+      <span class="pill">Scottsdale</span>
+      <span class="pill">Tempe</span>
+      <span class="pill">Mesa</span>
+      <span class="pill">Chandler</span>
+      <span class="pill">Gilbert</span>
+      <span class="pill">Glendale</span>
+      <span class="pill">Peoria</span>
+      <span class="pill">Surprise</span>
     </div>
   </div>
 </section>
 
 <section id="contact">
-  <div class="wrap">
-    <div class="sec-head">
-      <div><div class="sec-tag">Contact</div><h2 class="sec-title">Book Your Detail</h2></div>
-      <p class="sec-sub">Tell us about your vehicle — we reply with a free quote, usually the same day.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="info-card reveal">
-        <h3>Get in touch</h3>
-        <p>Email is the fastest way to book — send your vehicle details and we'll reply with a quote.</p>
-        <div class="info-line"><small>Email</small><a href="mailto:vqz.detailing17@gmail.com">vqz.detailing17@gmail.com</a></div>
-        <div class="info-line"><small>Based in</small><b>Albuquerque, NM</b></div>
-        <div class="info-line"><small>Availability</small><b>7 days a week</b></div>
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <h2>Book your free meet &amp; greet</h2>
+      <p>Call, text or send the form below. Tell us about your pup — breed, age, routine — and we'll set up a free meet &amp; greet at your convenience.</p>
+      <div class="info-row">
+        <span class="dot"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+        <span><a href="tel:+14802175352">(480) 217-5352</a></span>
       </div>
-      <form id="quoteForm" class="reveal">
-        <h3>Request a quote</h3>
-        <p>Your message opens in your email app, addressed straight to VQZ.</p>
-        <label for="qname">Name</label><input id="qname" required placeholder="Your name">
-        <label for="qphone">Phone</label><input id="qphone" type="tel" placeholder="(555) 000-0000">
-        <label for="qveh">Vehicle</label><input id="qveh" placeholder="e.g. 2021 Ford F-150, crew cab">
-        <label for="qsvc">Service</label>
-        <select id="qsvc"><option>Full Interior Detail</option><option>Exterior Wash &amp; Wax</option><option>Full Detail (Interior + Exterior)</option><option>Clay Bar &amp; Decontamination</option><option>Headlight Restoration</option><option>Engine Bay Cleaning</option><option>Ceramic Spray Sealant</option></select>
-        <label for="qmsg">Details</label><textarea id="qmsg" placeholder="Condition, location, preferred days..."></textarea>
-        <button class="submit" type="submit">Send Booking Request</button>
-      </form>
+      <div class="info-row">
+        <span class="dot"><svg viewBox="0 0 24 24"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm1 2l7 5 7-5"/></svg></span>
+        <span><a href="mailto:littlepawspetsittingllc@gmail.com">littlepawspetsittingllc@gmail.com</a></span>
+      </div>
+      <div class="info-row">
+        <span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke="#F4F1EC" stroke-width="2" fill="none" stroke-linecap="round"/></svg></span>
+        <span>Daily, 7:00 am – 9:00 pm</span>
+      </div>
     </div>
+    <form class="quote-form reveal" id="quoteForm">
+      <h3>Request a free quote</h3>
+      <p>Fill this out and it opens an email to us — just hit send.</p>
+      <div class="field">
+        <label for="qname">Your name</label>
+        <input id="qname" type="text" required placeholder="e.g. Jessica Miller">
+      </div>
+      <div class="field">
+        <label for="qphone">Phone</label>
+        <input id="qphone" type="tel" placeholder="(480) 555-0123">
+      </div>
+      <div class="field">
+        <label for="qtype">Service needed</label>
+        <select id="qtype">
+          <option>Drop-in visits</option>
+          <option>Dog walking</option>
+          <option>Overnight stays</option>
+          <option>In-home pet sitting (vacation)</option>
+          <option>Puppy care</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="qmsg">About your pup</label>
+        <textarea id="qmsg" required placeholder="Breed, age, schedule, medications, anything we should know…"></textarea>
+      </div>
+      <button type="submit" class="btn" style="width:100%">Send Quote Request</button>
+    </form>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 VQZ Detailing · Albuquerque, NM</span>
-    <span><a href="#">Demo by Wahab Codes</a></span>
+    <a class="brand" href="#top">
+      <span class="paw"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="15.5" rx="4.2" ry="3.4"/><circle cx="6.5" cy="10.5" r="2.1"/><circle cx="10" cy="7.5" r="2.1"/><circle cx="14" cy="7.5" r="2.1"/><circle cx="17.5" cy="10.5" r="2.1"/></svg></span>
+      Little Paws Pet Sitting LLC
+    </a>
+    <p>Small-breed dog sitting · Phoenix, Arizona</p>
+    <p><a href="tel:+14802175352">(480) 217-5352</a> · <a href="mailto:littlepawspetsittingllc@gmail.com">littlepawspetsittingllc@gmail.com</a></p>
+    <p class="credit">Demo by Wahab Codes</p>
   </div>
 </footer>
 
 <script>
-document.querySelectorAll('nav.links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav.links').classList.toggle('open')));
-document.getElementById('quoteForm').addEventListener('submit',function(e){
-  e.preventDefault();
-  var body="Name: "+document.getElementById('qname').value+"%0D%0A"
-    +"Phone: "+document.getElementById('qphone').value+"%0D%0A"
-    +"Vehicle: "+document.getElementById('qveh').value+"%0D%0A"
-    +"Service: "+document.getElementById('qsvc').value+"%0D%0A%0D%0A"
-    +"Details:%0D%0A"+encodeURIComponent(document.getElementById('qmsg').value);
-  window.location.href="mailto:vqz.detailing17@gmail.com?subject="+encodeURIComponent("Detail Booking Request — "+document.getElementById('qname').value)+"&body="+body;
-});
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
-document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  const burger=document.getElementById('burger'),navLinks=document.getElementById('navLinks');
+  burger.addEventListener('click',()=>navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  document.getElementById('quoteForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    const n=document.getElementById('qname').value.trim();
+    const p=document.getElementById('qphone').value.trim();
+    const t=document.getElementById('qtype').value;
+    const m=document.getElementById('qmsg').value.trim();
+    const subject=encodeURIComponent('Quote request — '+t);
+    const body=encodeURIComponent('Name: '+n+(p?'\nPhone: '+p:'')+'\nService: '+t+'\n\nAbout the pup:\n'+m);
+    window.location.href='mailto:littlepawspetsittingllc@gmail.com?subject='+subject+'&body='+body;
+  });
 </script>
 </body>
 </html>
